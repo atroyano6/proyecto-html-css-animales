@@ -1,0 +1,38 @@
+<!-- 
+ Nombre: Estefanía Molina 
+ Fecha: 22/03/2026 (construccion de la estructura)
+ Página de Newsletter-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--====================== FAVICON (COPIAR EN TODAS LAS PÁGINAS DEL PROYECTO) ======================================-->
+    <link rel="icon" type="image/x-icon" href="images/favicon-cola-feliz.png">
+    <title>Newsletter</title>
+</head>
+<body class="newsletter">
+    <main>
+        <!--================================================== ENCABEZADO PRINCIPAL (SIN BARRA DE NAVEGACION)================-->
+        <header>
+            <div>
+                <img src="images/logotipo.png" alt="logo la colita feliz">
+            </div>
+        </header>
+
+         <!--================================================== MAIN:CUERPO PRINCIPAL =======================================-->
+        <section>
+            <form action="suscripcion.html" method="post">
+                <h2>¡Suscribete a la newsletter para recibir noticias y ofertas únicas para tu mascota!</h2>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+                <label for="privacidad"></label>
+                <input type="checkbox" id="privacidad" name="privacidad" value="acepto" required> He leído y comprendo la 
+                <a href="politicaprivacidad.html" target="_blank">Politica de privacidad</a> y deseo recibir ofertas para mi mascota. 
+                <button type="submit" name="enviar" value="enviar">¡Suscribete ahora!</button>
+                <a href="index.html">Volver al inicio</a>
+            </form>
+        </section>
+    </main>    
+</body>
+</html>
