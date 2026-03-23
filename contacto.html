@@ -15,37 +15,86 @@
         </nav>
     </header>
     <main>
+        <h1>¡Contáctanos!</h1>
+        <br><br>
         <section>
             <form action="post">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" required>
+                </div>
 
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required placeholder="ejemplo@mimail.com">
+                <div>
+                    <label for="phone-number">Teléfono de contacto</label>
+                    <input type="number" id="phone-number" required>
+                </div>
 
+                <div>
+                    <label for="consultation">Describe tu consulta</label>
+                    <textarea name="consultation" id="consultation"></textarea>
+                </div>
+                <div>
+                    <p>Tipo de animal</p>
+                    <input type="radio" id="perro" value="perro" name="tipo-animal">
+                    <label for="perro">Perro</label>
+                    <br>
+                    <input type="radio" id="gato" value="gato" name="tipo-animal">
+                    <label for="gato">Gato</label>
+                    <br>
+                    <input type="radio" id="otros" value="otros" name="tipo-animal">
+                    <label for="otros">Otros</label>
+                </div>
+
+                <div>
+                    <p>Motivo por el que realizas la consulta</p>
+                    <select>
+                        <option value="elige-motivo">Elige tu opción</option>
+                        <option value="veterinaria">Veterinaria</option>
+                        <option value="belleza">Peluquería y belleza</option>
+                        <option value="adopciones">Adopciones</option>
+                        <option value="otros">Otros: (Urgencias, etc)</option>
+                    </select>
+                </div>
+                <br><br>
+                <div>
+                    <input type="checkbox" id="agreement" name="agreement" value="agreement" checked>
+                    <label for="agreement">Acepto la <a href="politicaprivacidad.html">política de privacidad</a></label>
+                </div>
+                <br><br>
+                <div class="button">
+                    <input type="submit" value="Enviar" name="Enviar" id="submit">
+                    <input type="button" value="Borrar" name="Borrar" id="Borrar">
+                </div>
             </form>
         </section>
         <article>
-            Ubicación + fotos
+          <div>
+            <p>Ubicación:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.200973919088!2d-3.6056024900274495!3d37.17169457202737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fc966a7c6a75%3A0x27e9f13d349f4d40!2sC.%20Recogidas%2C%20Granada!5e0!3m2!1ses!2ses!4v1774255337233!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Calle Recogidas, nº 45, 18002, Granada</p>
+            <p>Teléfono de emergencias: 602134671</p>
+           </div>
         </article>
 
         <section>
             <table>
-                Tabla Horaria
+                Tabla Horaria 
+                <!-- To-do -->
             </table>
+            <br>
         </section>
     </main>
     <footer>
         <div>
             <div>Enlaces de interés:
                 <ul>
-                    <li><a href="privacidad">Politica de privacidad</a></li>
+                    <li><a href="politicaprivacidad.html">Politica de privacidad</a></li>
                     <li><a href="legal">Aviso Legal</a></li>
-                    <li><a href="proteccion-datos">Protección de datos</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
 
                 </ul>
-            </div>
-            <div>
-                <link href="contacto.html">Contacto
-            </div>
-            <div>
-                <link href="newsletter">Newsletter
             </div>
             <div>
                 <a target="_blank" href="https://twitter.com" title="Twitter">Twitter</a>
@@ -57,4 +106,11 @@
     </footer>
 </body>
 
+<!--POR HACER
+1- Barra navegación en header-
+2- Tabla horaria
+3- Estilos de botones
+4- Enlazar Twit y Linke a Imagenes del Logo
+5- Estilos
+-->
 </html>
