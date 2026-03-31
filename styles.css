@@ -226,6 +226,7 @@ td {
 .nav {
     background-color: var(--beige);
     border-bottom: 2px solid var(--verde);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .nav-container {
