@@ -3,7 +3,149 @@
 
 
 /* =================================== SERVICIOS ================================================ */ 
+/*(Estefanía 30/03/2026) Ajuste estilos del section*/
 /*class del body es servicios*/
+.servicios {                      /*Estilos generales de la página*/
+    background-color: #735449; 
+    font-family: 'Lucida Sans';
+}
+
+.servicios main {                /*Estilos del main*/
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f2eadf;
+    padding: 2px;
+}
+
+.contenedor-servicios {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*----------Galeria Servicios---------*/
+.galeria-servicios {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: space-evenly;
+    gap: 40px 130px;
+}
+
+
+/*---------------Tabla----------------*/
+.contenedor-tabla {            /*Estilos div tabla*/
+    overflow-x: auto;           
+    width: 100%;
+    background-color: burlywood;
+    padding: 20px 10px 20px 10px;
+    /*margin: 5px 5px 5px 5px;*/
+    /*border: 2px solid gray; QUITAR*/
+    /*overflow-x: auto;*/
+}
+
+.tabla-servicios, th, td {
+    width:auto;                 /*Estilos tabla*/
+    border-collapse: collapse;
+}
+
+th {
+    border: 2px solid #f2eadf;
+    height: 30px;
+    padding: 10px;
+    background-color: #AFBFA3;
+    text-align: center;
+    vertical-align:auto;
+}
+
+td {
+    height: 20px;
+    border-bottom: 1px dashed #2a2e27fe;
+    background-color: #f2eadf;
+    text-align: left;
+   
+}
+
+tfoot td {
+    padding: 10px;
+    background-color: #AFBFA3;
+    border: 2px solid #f2eadf;
+}
+
+{ 
+    text-align: center;
+    background-color: #AFBFA3;
+    border: 2px solid #f2eadf;
+    padding: 5px;  
+}
+
+div.galeria-servicios img {           
+    height: 300px;  /*PENDIENTE DE AJUSTAR*/
+    border: 2px solid #2a2e27fe;   
+    border-radius: 5px;
+}
+
+tr:hover td {
+    background-color: #D996A2;
+    border-color:#F294A5 ;
+}
+
+/*---------------Galeria--------------*/
+.galeria-fotos {           /*Estilos section galeria*/
+    display: block;        /*por defecto*/
+    width: 100%;
+    background-color: bisque;
+    padding: 5px 5px;
+    /*border: 2px solid gray;  QUITAR*/
+}
+
+.galeria-contenedor {
+    display: flex;               
+    flex-direction: row;     
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    height: 700px;
+    align-items: center;
+    background: #735449 url('images/fondo-tablero.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 5px;
+    border: 3px solid #735449;
+    margin: 30px 10px;
+    padding: 20px 10px;
+
+}
+.galeria-item {
+    display: flex ;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    background-color: #9DBF8E;
+    border: 2px solid #2a2e27fe;
+    border-radius: 5px;
+    box-shadow: 5px 6px #2a2e27fe;
+    margin: 30px;
+    padding: 10px;
+    width: 250px;
+    height: 500px;
+    align-items: center;
+}
+
+.galeria-item img{
+    border: 2px solid #f2eadf;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.galeria-item div {
+    width: 100%;
+    background-color: #f2eadf;
+    border: 1px dashed #2a2e27fe;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 20px; 
+}
 
 
 /* =================================== SOBRE NOSOTRAS =========================================== */ 
@@ -207,8 +349,14 @@ td {
 
 
 /* =================================== ESTILOS PARA OBJETOS COMUNES A TODAS LAS PÁGINAS ============================================*/
-
-
+/*==================================== GENERALES ================================================= */
+/*(Estefanía 30/03/2026) Ajuste estilos generales*/
+* {
+    box-sizing: border-box; /* Resetear (dimension total real)*/
+    margin: 0px;
+    padding: 0px;
+}
+/*(Andrea 30/03/2026)*/
 /* Colores globales */
 :root {
     --rosa: #F294A5;

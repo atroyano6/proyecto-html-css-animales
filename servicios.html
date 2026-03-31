@@ -7,6 +7,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--====================== FAVICON (COPIAR EN TODAS LAS PÁGINAS DEL PROYECTO) ======================================-->
+    <link rel="icon" type="image/x-icon" href="images/favicon-cola-feliz.png">
+    <!--====================== ESTILOS (COPIAR EN TODAS LAS PÁGINAS DEL PROYECTO) ======================================-->
+    <link rel="stylesheet" href="styles.css">
     <title>Servicios</title>
 </head>
 <body class="servicios">
@@ -19,75 +23,272 @@
     <!--================================================== MAIN:CUERPO PRINCIPAL =======================================-->
     <main>
         <!--=================== SECCIÓN PARA LOS SERVICIOS (TABLA) =====================-->
-        <section>
-            <h1>Servicios y precios</h1>
-            <table></table>
+        <section class="contenedor-servicios">
+            <h1>Nuestros Servicios</h1>
+            <div class="galeria-servicios">
+                <div>
+                    <div><a href="#veterinaria" alt="Servicios Veterinaria"><img src="images/veterinaria2.jpeg" alt="Zona Atencion Veterinaria"></a></div>
+                    <div><h3>Veterinaria</h3></div>
+                </div>
+                <div>
+                    <div><a href="#peluqueria" alt="Servicios Peluqueria"><img src="images/peluqueria1.png" alt="Servicio Peluqueria Perro"></a></div>
+                    <div><h3>Peluquería</h3></div>
+                </div>
+                <div>
+                    <div><a href="#guarderia" alt="Servicios Guarderia"><img src="images/guarderia.png" alt="Zona Guarderia Gatos"></a></div>
+                    <div><h3>Guardería y residencia</h3></div>
+                </div>
+                <div>
+                    <div><a href="#adiestramiento" alt="Servicios Adiestramiento"><img src="images/entrenamiento.png" alt="Zona Adiestramiento Perro"></a></div>
+                    <div><h3>Adiestramiento</h3></div>
+                </div>
+                <div>
+                    <div><a href="#tienda" alt="Tienda Online"><img src="images/tienda-almacen.png" alt="Zona Almacen Tienda"></a></div>
+                    <div><h3>Tienda online</h3></div>
+                <div>
+                    <div><a href="#adopciones" alt="Servicios Adopciones"><img src="images/tienda-entrada.png" alt="Servicio Adopciones"></a></div>
+                    <div><h3>Adopciones</h3></div>
+                </div>
+            </div> 
+            <div class="texto">
+                <h2>Servicios y precios</h2>
+                <p>En La Cola Feliz ofrecemos un servicio integral orientado al cuidado, la salud y el bienestar de tu mascota. Nuestro centro reúne diferentes áreas especializadas para poder atender todas sus necesidades en un mismo espacio, siempre con un enfoque profesional, cercano y respetuoso.</p>
+                <p>Contamos con un equipo cualificado y unas instalaciones diseñadas para garantizar una atención de calidad, adaptándonos en cada caso a las características de cada animal.</p>
+                <p>A continuación, puedes consultar nuestros servicios organizados por departamentos, junto con precios orientativos. Cada servicio se realiza de forma personalizada, teniendo en cuenta factores como el tamaño, la raza, la edad o las necesidades específicas de cada mascota.</p>
+            </div>        
+            <div class="contenedor-tabla">
+                <table class="tabla-servicios">
+                    <thead>
+                        <tr>
+                            <th>Departamento</th>
+                            <th>Servicio</th>
+                            <th>Precio desde</th>
+                            <th>Información</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="veterinaria" rowspan="6">Veterinaria</th>
+                        </tr>
+                        <tr>
+                            <td>Primera consulta</td>
+                            <td>35€</td>
+                            <td>Evaluación general del estado de salud</td>
+                        </tr>
+                        <tr>
+                            <td>Consulta de revisión</td>
+                            <td>25€</td>
+                            <td>Seguimiento y control</td>
+                        </tr>
+                        <tr>
+                            <td>Vacunación</td>
+                            <td>30€</td>
+                            <td>Según pauta veterinaria</td>
+                        </tr>
+                        <tr>
+                            <td>Limpieza dental</td>
+                            <td>80€</td>
+                            <td>Bajo valoración previa</td>
+                        </tr>
+                        <tr>
+                            <td>Urgencias</td>
+                            <td>60€</td>
+                            <td>Atención prioritaria</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4"></th>
+                        </tr>
+                        <tr>
+                            <th id="peluqueria" rowspan="5">Peluquería</th>
+                        </tr>
+                        <tr>
+                            <td>Baño y secado</td>
+                            <td>18€</td>
+                            <td>Según tamaño del animal</td>
+                        </tr>
+                        <tr>
+                            <td>Baño y corte</td>
+                            <td>30€</td>
+                            <td>Según tamaño del animal</td>
+                        </tr>
+                        <tr>
+                            <td>Corte especial</td>
+                            <td>25€</td>
+                            <td>Adptado a raza o necesidad</td>
+                        </tr>
+                        <tr>
+                            <td>Higiene completa</td>
+                            <td>40€</td>
+                            <td>Baño + corte/secado + uñas</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4"></th>
+                        </tr>
+                        <tr>
+                            <th id="guarderia" rowspan="6">Guardería y residencia</th>
+                        </tr>
+                        <tr>
+                            <td>Guardería medio día</td>
+                            <td>12€</td>
+                            <td>Incluye juego y supervisión</td>
+                        </tr>
+                        <tr>
+                            <td>Guardería día completo</td>
+                            <td>18€</td>
+                            <td>Incluye juego y supervisión</td>
+                        </tr>
+                        <tr>
+                            <td>Residencia noche</td>
+                            <td>22€</td>
+                            <td>Estancia con descanso supervisado</td>
+                        </tr>
+                        <tr>
+                            <td>Bono 5 días</td>
+                            <td>80€</td>
+                            <td>Uso flexible</td>
+                        </tr>
+                        <tr>
+                            <td>Bono 10 días</td>
+                            <td>150€</td>
+                            <td>Uso flexible</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4"></th>
+                        </tr>
+                        <tr>
+                            <th id="adiestramiento" rowspan="6">Adiestramiento</th>
+                        </tr>
+                        <tr>
+                            <td>Evaluación inicial</td>
+                            <td>30€</td>
+                            <td>Análisis de conducta</td>
+                        </tr>
+                        <tr>
+                            <td>Clase individual</td>
+                            <td>35€</td>
+                            <td>Sesión personalizada</td>
+                        </tr>
+                        <tr>
+                            <td>Bono 5 sesiones</td>
+                            <td>150€</td>
+                            <td>Seguimiento continuo</td>
+                        </tr>
+                        <tr>
+                            <td>Bono 10 sesiones</td>
+                            <td>280€</td>
+                            <td>Programa completo</td>
+                        </tr>
+                        <tr>
+                            <td>Educación cachorro</td>
+                            <td>120€</td>
+                            <td>Programa: bases del comportamiento</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4"></th>
+                        </tr>
+                        <tr>
+                            <th id="tienda" rowspan="2">Tienda online</th>
+                        </tr>
+                        <tr>
+                            <td>Productos para mascotas</td>
+                            <td>Próximamente</td>
+                            <td><a href="tienda.html">Disponible aquí</a></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Los precios indicados son orientativos y pueden variar en función del tamaño del animal, sus necesidades específicas o el tipo de tratamiento requerido. Para servicios personalizados o información más detallada, recomendamos <a href="contacto.html">contactar aquí </a>con nuestro equipo.</td>
+                        </tr>                 
+                    </tfoot>
+                </table>
+            </div>
         </section>
         <!--=================== SECCIÓN SERVICIO DE ADOPCIONES (GALERIA) ===============-->
         <section class="galeria-fotos">
-            <h1>Adopciones disponibles. ¡Adopta tu mascota!</h1>
-            <h2>Perros</h2>
-            <div class="galeria-contenedor1">
-                <div class="galeria-item1">
+            <div class="texto">
+                <h2 id="adopciones">Adopciones: Encuentra a tu nuevo compañero de vida.</h2>
+                <p>En La Cola Feliz creemos en las segundas oportunidades.</p>
+                <p>Colaboramos con asociaciones y proyectos de protección animal para ayudar a perros y gatos que buscan un hogar donde puedan sentirse seguros, queridos y parte de una familia.</p> 
+                <p>Todos los animales disponibles para adopción han sido atendidos por nuestro equipo, se entregan con seguimiento veterinario y están preparados para comenzar una nueva etapa en un entorno responsable.</p>
+                <p>Adoptar es una decisión importante. Por eso, acompañamos a cada familia durante el proceso, ofreciendo orientación y asegurándonos de que la adopción sea positiva tanto para la persona como para el animal.</p>
+                <p>A continuación, puedes conocer a algunos de los compañeros que actualmente están esperando una oportunidad.</p>
+            </div>
+            <div class="texto">
+                    <h3>Perros para adoptar</h3>
+                    <p>Compañeros activos, leales y llenos de energía que buscan una familia con la que compartir su día a día.</p>
+                </div>
+            <div class="galeria-contenedor">
+               <div class="galeria-item">
                     <img src="images/perro-coco.png" alt="Perro Coco Pequeño">
                     <div>
-                        <h2>Coco</h2>
-                        <p>Descripcion</p>
+                        <h3>Coco</h3>
+                        <p>2 años - 15 kg </p>
+                        <p>Activo y juguetón. Ideal para personas que disfruten de paseos y actividades al aire libre.</p>
                     </div>                   
                 </div>
-                <div class="galeria-item2">
-                    <img src="" alt="">
+                <div class="galeria-item">
+                    <img src="images/perro-dama.png" alt="Perra Dama Pequeña">
                     <div>
-                        <h2>Nombre</h2>
-                        <p>Descripción</p>
+                        <h3>Dama</h3>
+                        <p>3 años - 6 kg </p>
+                        <p>Muy sociable y dulce. Perfecta para convivir con otros animales.</p>
+                        
                     </div>
                 </div>
-                <div class="galeria-item3">
-                    <img src="" alt="">
+                <div class="galeria-item">
+                    <img src="images/perro-linda.png" alt="Perra Linda Grande">
                     <div>
-                        <h2>Nombre</h2>
-                        <p>Descripción</p>
+                        <h3>Linda</h3>
+                        <p>2 años - 30 kg</p>
+                        <p>Noble y protectora. Necesita espacio y una familia con experiencia.</p>
                     </div>
                 </div>
-                <div class="galeria-item4">
-                    <img src="" alt="">
+                <div class="galeria-item">
+                    <img src="images/perro-simba.png" alt="Perro Simba Pequeño">
                     <div>
-                        <h1>Nombre</h1>
-                        <p>Descripción</p>
+                        <h3>Simba</h3>
+                        <p>4 años - 4 kg</p>
+                        <p>Cariñoso y muy tranquilo. Le encanta estar acompañado y se adapta muy bien a la vida familiar.</p>
                     </div>
                 </div>
             </div>
-            <h3>Gatos</h3>
-            <div class="galeria-contenedor1">
-                <div class="galeria-item1">
+            <h3>Gatos para adoptar</h3>
+            <p>Independientes, curiosos y cariñosos, perfectos para distintos tipos de hogar.</p>
+            <div class="galeria-contenedor">
+                <div class="galeria-item">
                     <img src="images/gato-miki.png" alt="Gato Miki Amarillo">
                     <div>
-                        <h1>Miki</h1>
-                        <p>Descripcion</p>
+                        <h3>Miki</h3>
+                        <p>3 años</p>
+                        <p>Muy curioso y juguetón. Le encanta explorar y estar cerca de las personas.</p>
                     </div>                   
                 </div>
-                <div class="galeria-item2">
-                    <img src="" alt="">
+                <div class="galeria-item">
+                    <img src="images/gato-kitty.png" alt="Gata Kitty Tigre">
                     <div>
-                        <h1>Nombre</h1>
-                        <p>Descripción</p>
+                        <h3>Kitty</h3>
+                        <p>2 años</p>
+                        <p>Tranquila y cariñosa. Ideal para hogares calmados.</p>
                     </div>
                 </div>
-                <div class="galeria-item3">
-                    <img src="" alt="">
+                <div class="galeria-item">
+                    <img src="images/gato-orion.png" alt="Gato Orion Peluche">
                     <div>
-                        <h1>Nombre</h1>
-                        <p>Descripción</p>
+                        <h3>Orion</h3>
+                        <p>1 año</p>
+                        <p>Muy activo y divertido. Perfecto para familias.</p>
                     </div>
                 </div>
-                <div class="galeria-item4">
-                    <img src="" alt="">
+                <div class="galeria-item">
+                    <img src="images/gato-luna.png" alt="Gata Luna Europea">
                     <div>
-                        <h1>Nombre</h1>
-                        <p>Descripción</p>
+                        <h3>Luna</h3>
+                        <p>3 años</p>
+                        <p>Independiente pero muy afectuosa cuando coge confianza.</p>
                     </div>
                 </div>
             </div>
+            <p>Si estás interesado en adoptar o quieres más información sobre alguno de ellos, puedes ponerte en contacto con nuestro equipo.Contactar para adopción</p>
         </section>
     </main>
 
