@@ -5,13 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon-cola-feliz.png">
+    <link rel="stylesheet" href="styles.css">
     <title>Contacto</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logotipo.png" alt="Logo La Cola Feliz">
+                </a>
 
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="sobre.html">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -26,7 +39,7 @@
 
                 <label for="email">E-mail</label>
                 <input type="email" id="email" required placeholder="ejemplo@mimail.com">
-                <div>
+                <div><br>
                     <label for="phone-number">Teléfono de contacto</label>
                     <input type="number" id="phone-number" required>
                 </div>
@@ -35,20 +48,27 @@
                     <label for="consultation">Describe tu consulta</label>
                     <textarea name="consultation" id="consultation"></textarea>
                 </div>
-                <div>
-                    <p>Tipo de animal</p>
-                    <input type="radio" id="perro" value="perro" name="tipo-animal">
-                    <label for="perro">Perro</label>
-                    <br>
-                    <input type="radio" id="gato" value="gato" name="tipo-animal">
-                    <label for="gato">Gato</label>
-                    <br>
-                    <input type="radio" id="otros" value="otros" name="tipo-animal">
-                    <label for="otros">Otros</label>
+                <div class="radio-group">
+                    <p class="formulario">Tipo de animal</p>
+
+                    <div class="radio-item">
+                        <input type="radio" id="perro" value="perro" name="tipo-animal">
+                        <label for="perro">Perro</label>
+                    </div>
+
+                    <div class="radio-item">
+                        <input type="radio" id="gato" value="gato" name="tipo-animal">
+                        <label for="gato">Gato</label>
+                    </div>
+
+                    <div class="radio-item">
+                        <input type="radio" id="otros" value="otros" name="tipo-animal">
+                        <label for="otros">Otros</label>
+                    </div>
                 </div>
 
                 <div>
-                    <p>Motivo por el que realizas la consulta</p>
+                    <p class="formulario">Motivo por el que realizas la consulta</p>
                     <select>
                         <option value="elige-motivo">Elige tu opción</option>
                         <option value="veterinaria">Veterinaria</option>
@@ -58,9 +78,11 @@
                     </select>
                 </div>
                 <br><br>
-                <div>
-                    <input type="checkbox" id="agreement" name="agreement" value="agreement" checked>
-                    <label for="agreement">Acepto la <a href="politicaprivacidad.html">política de privacidad</a></label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agreement" name="agreement" checked>
+                    <label for="agreement">
+                        Acepto la <a href="politicaprivacidad.html">política de privacidad</a>
+                    </label>
                 </div>
                 <br><br>
                 <div class="button">
@@ -70,47 +92,85 @@
             </form>
         </section>
         <article>
-          <div>
-            <p>Ubicación:</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.200973919088!2d-3.6056024900274495!3d37.17169457202737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fc966a7c6a75%3A0x27e9f13d349f4d40!2sC.%20Recogidas%2C%20Granada!5e0!3m2!1ses!2ses!4v1774255337233!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Calle Recogidas, nº 45, 18002, Granada</p>
-            <p>Teléfono de emergencias: 602134671</p>
-           </div>
+            <div>
+                <p>Ubicación:</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.200973919088!2d-3.6056024900274495!3d37.17169457202737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fc966a7c6a75%3A0x27e9f13d349f4d40!2sC.%20Recogidas%2C%20Granada!5e0!3m2!1ses!2ses!4v1774255337233!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Calle Recogidas, nº 45, 18002, Granada</p>
+                <p>Teléfono de emergencias: 602134671</p>
+            </div>
         </article>
 
         <section>
             <table>
-                Tabla Horaria 
-                <!-- To-do -->
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes - Viernes</td>
+                        <td>09:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>10:00 - 14:00</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Cerrado</td>
+                    </tr>
+                </tbody>
             </table>
             <br>
         </section>
     </main>
-    <footer>
-        <div>
-            <div>Enlaces de interés:
-                <ul>
-                    <li><a href="politicaprivacidad.html">Politica de privacidad</a></li>
-                    <li><a href="legal">Aviso Legal</a></li>
-                    <li><a href="newsletter.html">Newsletter</a></li>
+    <footer class="footer">
+        <div class="footer-container">
 
+            <div>
+                <h3>Horario</h3>
+                <p>Lunes a viernes: 09:00 - 18:00</p>
+                <p>Sábado: 10:00 - 14:00</p>
+                <p>Urgencias 24h</p>
+            </div>
+
+            <div>
+                <h3>Dirección</h3>
+                <p>Calle Recogidas, 45</p>
+                <p>Granada</p>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>Tel: 602 134 671</p>
+                <p>Email: info@lacolafeliz.com</p>
+            </div>
+
+            <div>
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="politicaprivacidad.html">Privacidad</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
                 </ul>
             </div>
-            <div>
-                <a target="_blank" href="https://twitter.com" title="Twitter">Twitter</a>
-                <a target="_blank" href="https://es.linkedin.com/" title="Linkedin">Linkedin</a>
-            </div>
 
-            <div>&copy; 2026 Protectora de Animales. Todos los derechos reservados.</div>
         </div>
+
+        <p class="copyright">
+            © 2026 La Cola Feliz
+        </p>
     </footer>
 </body>
 
 <!--POR HACER
-1- Barra navegación en header-
-2- Tabla horaria
-3- Estilos de botones
-4- Enlazar Twit y Linke a Imagenes del Logo
-5- Estilos
+1. Index
+2. Readme.md
+3. ¿?Modificar colores de navbar y footer
 -->
+
 </html>
