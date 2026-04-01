@@ -1,16 +1,18 @@
-/* =================================== HOME(INDEX) ============================================== */ 
+/* =================================== HOME(INDEX) ============================================== */
 
 
 
-/* =================================== SERVICIOS ================================================ */ 
+/* =================================== SERVICIOS ================================================ */
 /*(Estefanía 30/03/2026) Ajuste estilos del section*/
 /*class del body es servicios*/
-.servicios {                      /*Estilos generales de la página*/
-    background-color: #735449; 
+.servicios {
+    /*Estilos generales de la página*/
+    background-color: #735449;
     font-family: 'Lucida Sans';
 }
 
-.servicios main {                /*Estilos del main*/
+.servicios main {
+    /*Estilos del main*/
     max-width: 1200px;
     margin: auto;
     background-color: #f2eadf;
@@ -20,13 +22,13 @@
 .contenedor-servicios {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 /*----------Galeria Servicios---------*/
 .galeria-servicios {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: stretch;
@@ -36,8 +38,9 @@
 
 
 /*---------------Tabla----------------*/
-.contenedor-tabla {            /*Estilos div tabla*/
-    overflow-x: auto;           
+.contenedor-tabla {
+    /*Estilos div tabla*/
+    overflow-x: auto;
     width: 100%;
     background-color: burlywood;
     padding: 20px 10px 20px 10px;
@@ -46,8 +49,11 @@
     /*overflow-x: auto;*/
 }
 
-.tabla-servicios, th, td {
-    width:auto;                 /*Estilos tabla*/
+.tabla-servicios,
+th,
+td {
+    width: auto;
+    /*Estilos tabla*/
     border-collapse: collapse;
 }
 
@@ -57,7 +63,7 @@ th {
     padding: 10px;
     background-color: #AFBFA3;
     text-align: center;
-    vertical-align:auto;
+    vertical-align: auto;
 }
 
 td {
@@ -65,7 +71,7 @@ td {
     border-bottom: 1px dashed #2a2e27fe;
     background-color: #f2eadf;
     text-align: left;
-   
+
 }
 
 tfoot td {
@@ -74,27 +80,30 @@ tfoot td {
     border: 2px solid #f2eadf;
 }
 
-{ 
+    {
     text-align: center;
     background-color: #AFBFA3;
     border: 2px solid #f2eadf;
-    padding: 5px;  
+    padding: 5px;
 }
 
-div.galeria-servicios img {           
-    height: 300px;  /*PENDIENTE DE AJUSTAR*/
-    border: 2px solid #2a2e27fe;   
+div.galeria-servicios img {
+    height: 300px;
+    /*PENDIENTE DE AJUSTAR*/
+    border: 2px solid #2a2e27fe;
     border-radius: 5px;
 }
 
 tr:hover td {
     background-color: #D996A2;
-    border-color:#F294A5 ;
+    border-color: #F294A5;
 }
 
 /*---------------Galeria--------------*/
-.galeria-fotos {           /*Estilos section galeria*/
-    display: block;        /*por defecto*/
+.galeria-fotos {
+    /*Estilos section galeria*/
+    display: block;
+    /*por defecto*/
     width: 100%;
     background-color: bisque;
     padding: 5px 5px;
@@ -102,8 +111,8 @@ tr:hover td {
 }
 
 .galeria-contenedor {
-    display: flex;               
-    flex-direction: row;     
+    display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     height: 700px;
@@ -116,11 +125,12 @@ tr:hover td {
     padding: 20px 10px;
 
 }
+
 .galeria-item {
-    display: flex ;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content:flex-start;
+    justify-content: flex-start;
     background-color: #9DBF8E;
     border: 2px solid #2a2e27fe;
     border-radius: 5px;
@@ -132,7 +142,7 @@ tr:hover td {
     align-items: center;
 }
 
-.galeria-item img{
+.galeria-item img {
     border: 2px solid #f2eadf;
     border-radius: 5px;
     width: 100%;
@@ -144,19 +154,19 @@ tr:hover td {
     border: 1px dashed #2a2e27fe;
     border-radius: 5px;
     margin-top: 40px;
-    padding: 20px; 
+    padding: 20px;
 }
 
 
-/* =================================== SOBRE NOSOTRAS =========================================== */ 
+/* =================================== SOBRE NOSOTRAS =========================================== */
 
 
-/* =================================== EQUIPO =================================================== */ 
+/* =================================== EQUIPO =================================================== */
 /*class del body es equipo*/
 
 
 
-/* =================================== TIENDA =================================================== */ 
+/* =================================== TIENDA =================================================== */
 /*class del body es tienda*/
 
 
@@ -166,8 +176,8 @@ tr:hover td {
 /* (Andrea 31/03/2026) Estilos página contacto */
 
 body.contacto {
-    background-color: var(--beige);
-    font-family: Arial, sans-serif;
+    background-color: var(--marron);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 main {
@@ -175,12 +185,12 @@ main {
 }
 
 h1 {
-    color: var(--marron);
+    color: var(--verde);
     text-align: center;
 }
 
 form {
-    background-color: white;
+    background-color: var(--beige);
     padding: 25px;
     border-radius: 10px;
     max-width: 600px;
@@ -199,7 +209,9 @@ label {
     font-weight: bold;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     width: 100%;
     padding: 10px;
     border: 1px solid var(--verde-claro);
@@ -272,6 +284,48 @@ textarea {
     color: var(--rosa);
 }
 
+/* (Andrea 01/04/2026) Radios verdes */
+
+
+.radio-item input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--verde);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Círculo interior */
+.radio-item input[type="radio"]:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--verde);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hover */
+.radio-item input[type="radio"]:hover {
+    border-color: var(--verde-claro);
+}
+
+/*click */
+.radio-item input[type="radio"]:checked {
+    border-color: var(--verde);
+}
+
+/* Label */
+.radio-item label {
+    cursor: pointer;
+}
+
 /* (Andrea 31/03/2026) Arreglando checkbox + hover */
 
 .checkbox-group {
@@ -342,7 +396,7 @@ td {
     padding: 10px;
 }
 
-/* =================================== NEWSLETTER================================================ */ 
+/* =================================== NEWSLETTER================================================ */
 /*class del body es newsletter*/
 
 
@@ -352,10 +406,12 @@ td {
 /*==================================== GENERALES ================================================= */
 /*(Estefanía 30/03/2026) Ajuste estilos generales*/
 * {
-    box-sizing: border-box; /* Resetear (dimension total real)*/
+    box-sizing: border-box;
+    /* Resetear (dimension total real)*/
     margin: 0px;
     padding: 0px;
 }
+
 /*(Andrea 30/03/2026)*/
 /* Colores globales */
 :root {
@@ -365,6 +421,19 @@ td {
     --verde-claro: #AFBFA3;
     --beige: #F2EADF;
     --marron: #735449;
+}
+
+/*Fuente de títulos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Inconsolata:wght@200..900&display=swap');
+
+.inconsolata {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 /* =================================== BARRA DE NAVEGACIÓN ========================================*/
@@ -381,11 +450,11 @@ td {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px; 
+    padding: 10px 40px;
 }
 
 .logo img {
-    height: 100px;
+    height: 150px;
 }
 
 .nav-menu {
