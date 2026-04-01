@@ -149,6 +149,89 @@ tr:hover td {
 
 
 /* =================================== SOBRE NOSOTRAS =========================================== */ 
+.sobre-nosotras{
+    max-width: 1200px;
+    background-color: var(--beige);
+    margin: auto;
+    padding: 40px;
+}
+body{
+    background-color: var(--marron);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.historia, .mision {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: var(--beige);
+    border-radius: 10px;
+    border: 2px solid var(--verde);
+
+}
+.historia h2, .mision h2{
+    color: var(--rosa-sec);
+
+}
+.fundadoras{
+    text-align: center;
+
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    background-color: var(--beige);
+    border: 2px solid var(--rosa);
+    border-radius: 10px;
+    padding: 15px;
+    width: 280px;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.card h3{
+    color: var(--marron);
+    margin-top: 10px;
+
+}
+.rol{
+    color: var(--verde-claro);
+    font-weight: bold;
+
+}
+.card p{
+    font-size: 14px;
+}
+.lista{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    
+    
+}
+.lista li{
+    padding-left: 20px;
+    list-style-position: inside; 
+    padding: 10px;
+    text-align: left;
+    
+
+}
+
+
+
+
+
+
+
+
 
 
 /* =================================== EQUIPO =================================================== */ 
