@@ -326,8 +326,10 @@ textarea {
     cursor: pointer;
 }
 
-/* (Andrea 31/03/2026) Arreglando checkbox + hover */
+/* (Andrea 01/04/2026) Arreglando checkbox + hover otra vez */
 
+
+/* Contenedor */
 .checkbox-group {
     display: flex;
     align-items: center;
@@ -335,29 +337,64 @@ textarea {
 }
 
 .checkbox-group input[type="checkbox"] {
-    width: auto;
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid var(--verde);
+    border-radius: 5px;
+
     cursor: pointer;
+    position: relative;
 }
 
+/* Check interior */
+.checkbox-group input[type="checkbox"]:checked::before {
+    content: "✔";
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+    background-color: var(--verde);
+}
+
+/* Hover */
+.checkbox-group input[type="checkbox"]:hover {
+    border-color: var(--rosa);
+}
+
+/* Animación*/
+.checkbox-group input[type="checkbox"] {
+    transition: all 0.2s ease;
+}
+
+/* Label */
 .checkbox-group label {
-    margin: 0;
     cursor: pointer;
     color: var(--marron);
 }
 
+/* Hover del texto */
 .checkbox-group label:hover {
     color: var(--rosa);
 }
 
+/* Link dentro */
 .checkbox-group a {
     color: var(--verde);
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .checkbox-group a:hover {
     color: var(--rosa-sec);
-    text-decoration: underline;
 }
 
 /*Estilos de mapa + info*/
@@ -430,7 +467,8 @@ td {
 .inconsolata {
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-size:xx-large;
+  font-weight:bolder;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
