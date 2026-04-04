@@ -316,12 +316,18 @@ body.contacto {
 }
 
 .contacto main {                               /*Modifico los selectores porque hay interferencias*/
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--beige);
     padding: 40px;
 }
 
 .contacto h1 {                                /*Modifico los selectores porque hay interferencias*/     
-    color: var(--verde);
+    color: var(--rosa);
     text-align: center;
+    text-shadow: 1px 1px 3px var(--rosa-sec);
+    font-size: xx-large;
+    text-transform: uppercase;
 }
 
 .contacto form {                             /*Modifico los selectores porque hay interferencias*/
@@ -330,7 +336,10 @@ body.contacto {
     border-radius: 10px;
     max-width: 600px;
     margin: 0 auto;
-    border: 2px solid var(--verde);
+    background: var(--beige);
+    border: 2px solid var(--verde-sombras);
+    border-radius: 5px;
+    box-shadow: 5px 6px var(--verde-sombras);
 }
 
 form div {
@@ -916,7 +925,7 @@ td {
 
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Inconsolata:wght@200..900&display=swap');
 
-.inconsolata {
+ h1 {
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
   font-size:xx-large;
