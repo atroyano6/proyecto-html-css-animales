@@ -1,6 +1,7 @@
 <!-- 
  Nombre: Estefanía Molina 
  Fecha: 22/03/2026 (construccion de la estructura)
+ 04/04/2026 (introduccion barra navegación, modificación del html y dar estilos en css.)
  Página de Newsletter-->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,25 +15,35 @@
     <title>Newsletter</title>
 </head>
 <body class="newsletter">
-    <main>
-        <!--================================================== ENCABEZADO PRINCIPAL (SIN BARRA DE NAVEGACION)================-->
-        <header>
-            <div>
-                <img src="images/logotipo.png" alt="logo la colita feliz">
+     <!--================================================== ENCABEZADO PRINCIPAL (SIN BARRA DE NAVEGACION)================-->
+    <header>
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo-rosa.png" alt="Logo La Cola Feliz" id="logo1">
+                    <a href="index.html"><img src="images/marca-verde-sombras.png" alt="Marca La Cola Feliz" id="marca"></a>
+                    <img src="images/logo-rosa.png" alt="Logo La Cola Feliz" id="logo2">
+                </div>
             </div>
-        </header>
-
-         <!--================================================== MAIN:CUERPO PRINCIPAL =======================================-->
-        <section>
+        </nav>
+    </header>
+    <main>
+        <!--================================================== MAIN:CUERPO PRINCIPAL =======================================-->
+        <section class="suscripcion">
+            <div class="newsletter-logo">
+                <img src="images/gatita.jpeg" alt="logo la colita feliz">
+            </div>
             <form action="suscripcion.html" method="post">
-                <h2>¡Suscribete a la newsletter para recibir noticias y ofertas únicas para tu mascota!</h2>
+                <h1>Cuida mejor de tu mascota</h1>
+                <p>Recibe consejos, novedades y productos especialmente seleccionados por nuestro equipo.</p>
                 <label for="email"></label>
                 <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
-                <label for="privacidad"></label>
-                <input type="checkbox" id="privacidad" name="privacidad" value="acepto" required> He leído y comprendo la 
-                <a href="politicaprivacidad.html" target="_blank">Politica de privacidad</a> y deseo recibir ofertas para mi mascota. 
+                <label for="privacidad" class="privacidad">
+                    <input type="checkbox" id="privacidad" name="privacidad" value="acepto" required> He leído y comprendo la 
+                    <a href="politicaprivacidad.html" target="_blank">Politica de privacidad</a> y deseo recibir ofertas para mi mascota.
+                </label> 
                 <button type="submit" name="enviar" value="enviar">¡Suscribete ahora!</button>
-                <a href="index.html">Volver al inicio</a>
+                <a class="boton" href="index.html">Volver al inicio</a>
             </form>
         </section>
     </main>    

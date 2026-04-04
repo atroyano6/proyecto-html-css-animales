@@ -1,6 +1,7 @@
 <!-- 
  Nombre: Estefanía Molina 
  Fecha: 22/03/2026 (construccion de la estructura)
+ 04/04/2026 (introduccion barra navegación, modificación del html y dar estilos en css.)
  Página de suscripción-->
 <!DOCTYPE html>
 <html lang="en">
@@ -9,22 +10,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--====================== FAVICON (COPIAR EN TODAS LAS PÁGINAS DEL PROYECTO) ======================================-->
     <link rel="icon" type="image/x-icon" href="images/favicon-cola-feliz.png">
-    <!--====================== FAVICON (COPIAR EN TODAS LAS PÁGINAS DEL PROYECTO) ======================================-->
-    <link rel="icon" type="image/x-icon" href="images/favicon-cola-feliz.png">
+      <!--====================== ESTILOS (COPIAR EN TODAS LAS PÁGINAS DEL PROYECTO) ======================================-->
+    <link rel="stylesheet" href="styles.css">
     <title>Suscripcion</title>
 </head>
-<body class="suscripcion">
+<body class="suscripcion-realizada">
     <!--================================================== ENCABEZADO PRINCIPAL (SIN BARRA DE NAVEGACION)================-->
     <header>
-        <div>
-            <img src="images/logotipo.png" alt="logo la colita feliz">
-        </div>
-     </header>
-
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo-rosa.png" alt="Logo La Cola Feliz" id="logo1">
+                    <a href="index.html"><img src="images/marca-verde-sombras.png" alt="Marca La Cola Feliz" id="marca"></a>
+                    <img src="images/logo-rosa.png" alt="Logo La Cola Feliz" id="logo2">
+                </div>
+            </div>
+        </nav>
+    </header>
     <!--================================================== MAIN:CUERPO PRINCIPAL =======================================-->
     <main>
-        <h1>¡Bienvenid@ a La Colita Feliz!</h1>
-        <h3>Ya formas parte de nuestra familia</h3>
-        <a href="index.html">Volver al inicio</a>
+        <section class="bienvenida">
+            <div class="bienvenida-img">
+                <img src="images/jardinmascotas.jpeg" alt="logo la colita feliz">
+            </div>
+            <div class="bienvenida-texto">
+                <h1>¡Bienvenid@ a La Colita Feliz!</h1>
+                <h3>Ya formas parte de nuestra familia</h3>
+                <a href="index.html">Volver al inicio</a>
+            </div>
+        </section>
     </main>
 </html>

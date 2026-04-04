@@ -1,6 +1,7 @@
 <!-- 
  Nombre: Estefanía Molina 
  Fecha: 21/03/2026 (construccion de la estructura inicial)
+ 02/04/2026 (introduccion barra navegación, modificación del html y dar estilos en css.)
  Página de Tienda-->
 <!DOCTYPE html>
 <html lang="en">
@@ -9,57 +10,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--====================== FAVICON (COPIAR EN TODAS LAS PÁGINAS DEL PROYECTO) ======================================-->
     <link rel="icon" type="image/x-icon" href="images/favicon-cola-feliz.png">
-    <!--====================== FAVICON (COPIAR EN TODAS LAS PÁGINAS DEL PROYECTO) ======================================-->
-    <link rel="icon" type="image/x-icon" href="images/favicon-cola-feliz.png">
+    <!--====================== ESTILOS (COPIAR EN TODAS LAS PÁGINAS DEL PROYECTO) ======================================-->
+    <link rel="stylesheet" href="styles.css">
     <title>Tienda Online</title>
 </head>
 <body class="tienda">
-    <!--====================== NAVBAR:BARRA DE NAVEGACIÓN (COPIAR EN TODAS LAS PÁGINAS PRINCIPALES DEL PROYECTO) ===================-->
+   <!--====================== NAVBAR:BARRA DE NAVEGACIÓN (COPIAR EN TODAS LAS PÁGINAS PRINCIPALES DEL PROYECTO) ===================-->
     <header>
-        <nav class="navegacion-principal">
-
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo-rosa.png" alt="Logo La Cola Feliz" id="logo1">
+                    <a href="index.html"><img src="images/marca-verde-sombras.png" alt="Marca La Cola Feliz" id="marca"></a>
+                    <img src="images/logo-rosa.png" alt="Logo La Cola Feliz" id="logo2">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="sobre.html">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-
-    <!--================================================== MAIN:CUERPO PRINCIPAL =======================================-->
-    <main>
+    <!--================================================== MAIN:CUERPO PRINCIPAL =================================================-->
+    <main class="tienda-main">
         <!--=============================== SECCIÓN PARA TIENDA ONLINE ==================================-->
         <section class="tienda-contenido">
-            
-            <h1>Nuestra Tienda Online</h1>
-            <div class="imagenes">
-                <img src="images/tienda.png" alt="imagen tienda productos mascotas">
-                <img src="images/tienda2.png" alt="imagen tienda productos mascotas"> <!--ELEGIR FOTOGRAFIA y decidir colocación-->
+            <div class="tienda-imagenes">
+                <img src="images/tienda-mostrador.png" alt="Mostrador Tienda Mascotas">
+                <img src="images/tienda-entrada.png" alt="Estanteria Tienda Mascotas">
+                <img src="images/tienda-almacen.png" alt="Almacen Tienda Mascotas">
+                <img src="images/tienda-clientes.png" alt="Clientes Tienda Mascotas"> 
             </div>
 
-            <div class="texto">
-                <h3>Próximamente disponible</h3>
-                <p>Podrás acceder a nuestra tienda online, donde encontrarás productos seleccionados por nuestro equipo para el cuidado y bienestar de tu mascota.</p>
-                <p>En nuestra tienda trabajamos con marcas de confianza y productos que utilizamos diariamente en el centro, garantizando calidad, seguridad y respeto por los animales.</p>
-                <p>Podrás encontrar:</p>
-                <ul>
-                    <li>Alimentación natural y especializada.</li>
-                    <li>Accesorios.</li>
-                    <li>Juguetes.</li>
-                    <li>Productos de salud e higiene.</li>
-                    <li>Artículos recomendados por veterinarios.</li>
-                    <li>Complementos para adiestramiento.</li>
-                </ul>
-                <p>Muy pronto podrás comprar cómodamente desde casa y recibir todo lo que necesitas con la misma confianza que ofrecemos en nuestras instalaciones.</p>
-                <p><a href="newsletter.html" target="_self" title="Haz clic aquí">Suscríbete a nuestra newsletter</a> para no perderte la inauguración con precios especiales</p>
+            <div class="tienda-texto">
+                <div class="bloque">
+                    <h1>Nuestra Tienda Online</h1>
+                    <p>En La Cola Feliz creemos que el cuidado de una mascota no termina cuando sale de nuestras instalaciones. Forma parte del día a día, de los pequeños gestos, de las decisiones que tomamos en casa y de los productos que elegimos para su bienestar.</p><p>Por eso, además de nuestros servicios presenciales, llevamos tiempo trabajando en un espacio donde poder compartir todo ese conocimiento y trasladarlo también a tu hogar.</p>
+                </div>
+                <div>
+                    <h2>Próximamente disponible</h2>
+                    <p>Muy pronto podrás acceder a nuestra tienda online.</p><p>Un espacio pensado para que encuentres, de forma sencilla y con total confianza, productos seleccionados por nuestro equipo, basados en la experiencia real de nuestro día a día en el centro.</p>
+                </div>
+                <div>
+                    <h3>Selección basada en la experiencia</h3>
+                    <p>Actualmente, todos los productos que utilizamos en nuestras instalaciones —desde la alimentación hasta los artículos de higiene o los materiales de adiestramiento— han sido previamente probados y elegidos con un único criterio: el bienestar de los animales.</p><p>Esa misma selección será la que estará disponible en nuestra tienda online.</p><p>Porque no se trata de ofrecer cualquier producto, sino de ofrecer aquello en lo que realmente confiamos.</p>
+                </div>
+                <div>
+                    <h3>¿Qué podrás encontrar?</h3>
+                    <ul>
+                        <li>Alimentación natural y especializada.</li>
+                        <li>Accesorios para el día a día.</li>
+                        <li>Juguetes seguros y adaptados.</li>
+                        <li>Productos de salud e higiene.</li>
+                        <li>Artículos recomendados por veterinarios.</li>
+                        <li>Complementos para eduación y adiestramiento.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Mucho más que una tienda</h3>
+                    <p>Además, este espacio no será solo una tienda.</p><p>También será un lugar donde compartir recomendaciones, consejos y recursos útiles para ayudarte a cuidar mejor de tu mascota, siempre desde un enfoque responsable y cercano.</p>
+                    <p>Queremos que, incluso desde casa, sigas sintiendo la tranquilidad de saber que estás eligiendo lo mejor para ellos.</p>
+               </div>
+                <div>
+                    <h3>La misma confianza, también en casa</h3>
+                    <p>Muy pronto podrás comprar cómodamente desde casa y recibir todo lo que necesitas con la misma confianza que ofrecemos en nuestras instalaciones.</p>
+                    <p>Estamos trabajando para que este nuevo espacio refleje todo lo que somos: cercanía, cuidado y compromiso.</p>
+                </div>
+                <div>
+                    <h3>Matente informado</h3>
+                    <p><a href="newsletter.html" target="_self" title="Haz clic aquí">Suscríbete a nuestra newsletter</a> y sé de los primeros en descubrir la apertura, con acceso a novedades y condiciones especiales de lanzamiento.</p>
+                </div>       
             </div>
         </section>
     </main>
-
     <!--====================== FOOTER: PIÉ DE PÁGINA (COPIAR EN TODAS LAS PÁGINAS PRINCIPALES DEL PROYECTO) ========================-->
-    <footer class="navegacion-secundaria">
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div>
+                <h3>Horario</h3>
+                <p>Lunes a viernes: 09:00 - 18:00</p>
+                <p>Sábado: 10:00 - 14:00</p>
+                <p>Urgencias 24h</p>
+            </div>
+
+            <div>
+                <h3>Dirección</h3>
+                <p>Calle Recogidas, 45</p>
+                <p>Granada</p>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>Tel: 602 134 671</p>
+                <p>Email: info@lacolafeliz.com</p>
+            </div>
+
+            <div>
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="politicaprivacidad.html">Privacidad</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                </ul>
+            </div>
+
         </div>
-    </footer>
-    
+
+        <p class="copyright">
+            © 2026 La Cola Feliz
+        </p>
+    </footer>    
 </body>
 </html>

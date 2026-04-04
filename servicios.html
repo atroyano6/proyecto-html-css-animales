@@ -1,6 +1,7 @@
 <!-- 
  Nombre: Estefanía Molina 
  Fecha: 21/03/2026 (construccion de la estructura inicial)
+ 01/04/2026 (introduccion y modificación de la barra navegación)
  Página de Servicios-->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,8 +17,22 @@
 <body class="servicios">
     <!--====================== NAVBAR:BARRA DE NAVEGACIÓN (COPIAR EN TODAS LAS PÁGINAS PRINCIPALES DEL PROYECTO) ===================-->
     <header>
-        <nav class="navegacion-principal">
-
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo-rosa.png" alt="Logo La Cola Feliz" id="logo1">
+                    <a href="index.html"><img src="images/marca-verde-sombras.png" alt="Marca La Cola Feliz" id="marca"></a>
+                    <img src="images/logo-rosa.png" alt="Logo La Cola Feliz" id="logo2">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="sobre.html">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!--================================================== MAIN:CUERPO PRINCIPAL =======================================-->
@@ -291,16 +306,42 @@
             <p>Si estás interesado en adoptar o quieres más información sobre alguno de ellos, puedes ponerte en contacto con nuestro equipo.Contactar para adopción</p>
         </section>
     </main>
-
     <!--====================== FOOTER: PIÉ DE PÁGINA (COPIAR EN TODAS LAS PÁGINAS PRINCIPALES DEL PROYECTO) ========================-->
-    <footer class="navegacion-secundaria">
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div>
+                <h3>Horario</h3>
+                <p>Lunes a viernes: 09:00 - 18:00</p>
+                <p>Sábado: 10:00 - 14:00</p>
+                <p>Urgencias 24h</p>
+            </div>
+
+            <div>
+                <h3>Dirección</h3>
+                <p>Calle Recogidas, 45</p>
+                <p>Granada</p>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>Tel: 602 134 671</p>
+                <p>Email: info@lacolafeliz.com</p>
+            </div>
+
+            <div>
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="politicaprivacidad.html">Privacidad</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                </ul>
+            </div>
+
         </div>
-    </footer>
-    
+
+        <p class="copyright">
+            © 2026 La Cola Feliz
+        </p>
+    </footer>       
 </body>
 </html>
