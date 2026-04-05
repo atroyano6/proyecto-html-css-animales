@@ -1,23 +1,116 @@
 /* =================================== HOME(INDEX) ============================================== */
+/*-----------------Estefania (05/04/2026) estilos seccion galeria-----------------*/
+.carrusel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid var(--rosa);
+    border-radius: 5px;
+    background-color: var(--verde);
+    margin: 40px auto;
+    padding: 40px;
+    width: 90vw;          /*mas grande que el main*/
+    position: relative;   
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.foto  > img {
+   max-width: 300px;
+   border: 2px solid var(--beige);
+}
+
+.foto > img:hover {             
+    transform:scale(1.5);
+}
+
+/*-----------------Estefania (05/04/2026) estilos seccion reseñas-----------------*/
+.resenias {                   /*contenedor principal section*/
+    display: flex;               
+    flex-direction: row;     
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    width: auto;
+    background: var(--rosa-sec);
+    border-radius: 5px;
+    border: 2px solid var(--rosa-sec);
+    margin: 40px auto;
+    padding: 30px 30px;
+}
+
+.resenia-item {               /*contenedor articulo*/
+    flex: 1; 
+    min-width: 200px;
+    border: 2px solid var(--marron);
+    background-color: var(--beige);
+    border-radius: 5px;
+    box-shadow: 2px 2px var(--verde-sombras);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 20px;
+    text-align: left;
+    color: var(--verde-sombras);
+}
+
+.resenia-item > p {
+    color: var(--marron);
+    line-height: 1.5;
+    font-size: medium;
+}
+
+.resenia-item:hover {             
+    transform: translateY(-8px);
+}
 
 
+.resenia-img {                /*contenedor foto + div */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.resenia-img > img {         /*estilo foto*/
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.resenia-star {              /*contenedor star + h3*/
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: small;
+}
+
+.resenia-star > img {       /*estrellas*/
+    width: 100px;
+    height: auto;
+}
 
 /* =================================== SERVICIOS ================================================ */
 /*(Estefanía 30/03/2026) Ajuste estilos del section*/
 /*class del body es servicios*/
-.servicios {
-    /*estilos generales del body*/
-    background-color: var(--marron);
+/*
+.servicios {                      
+    background-color:var(--marron); 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.servicios main {
-    /*estilos del main*/
+.servicios main {                
     max-width: 1200px;
     margin: auto;
     background-color: var(--beige);
     padding: 40px;
-}
+}*/
 
 .contenedor-servicios {
     display: flex;
@@ -105,9 +198,8 @@ tr:hover td {
     display: block;
     /*por defecto*/
     width: 100%;
-    background-color: bisque;
     padding: 5px 5px;
-    /*border: 2px solid gray;  QUITAR*/
+    border: 2px solid gray;
 }
 
 .galeria-contenedor {
@@ -535,10 +627,10 @@ textarea {
 
 /*Estilos de mapa + info*/
 
-article {
+/*article {                                  REVISAR CHOCA CON ARTICULO INDEX
     margin-top: 40px;
     text-align: center;
-}
+}*/
 
 iframe {
     max-width: 100%;
@@ -933,6 +1025,19 @@ td {
     /* Resetear (dimension total real)*/
     margin: 0px;
     padding: 0px;
+}
+
+body {                      /*estilos comunes en todas las pag: body*/
+   background-color:var(--marron); 
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: var(--verde-sombras);
+}
+
+main {                     /*estilos comunes en todas las pag: main*/
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--beige);
+    padding: 40px;
 }
 
 /*(Andrea 30/03/2026)*/

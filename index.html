@@ -1,10 +1,17 @@
+<!-- 
+ Nombre: Andrea Troyano 
+ Fecha: 04/04/2026 (construccion de la estructura: introduccion barra navegación, footer, section...)
+ Nombre: Estefanía Molina
+ Fecha: 05/04/2026 (Añade elementos del html y dar estilos en css.)
+ Página de Inicio-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--====================== FAVICON (COPIAR EN TODAS LAS PÁGINAS DEL PROYECTO) ======================================-->
     <link rel="icon" type="image/x-icon" href="images/logo-rosa.png">
+    <!--====================== ESTILOS (COPIAR EN TODAS LAS PÁGINAS DEL PROYECTO) ======================================-->
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,10 +19,9 @@
         rel="stylesheet">
     <title>Home</title>
 </head>
-
-<body>
+<body class="index">
+     <!--====================== NAVBAR:BARRA DE NAVEGACIÓN (COPIAR EN TODAS LAS PÁGINAS PRINCIPALES DEL PROYECTO) ===================-->
     <header>
-
         <nav class="nav">
             <div class="nav-container">
                 <div class="nav-logo">
@@ -35,12 +41,31 @@
             </div>
         </nav>
     </header>
-
-
+     <!--================================================== MAIN:CUERPO PRINCIPAL =======================================-->
     <main>
+        <!--=================== SECCION "TEXTO PRIMER IMPACTO" ================================================-->
         <section>
-            <!--CARRUSEL IMAGENES-->
+            <h1>Cuidamos de tu mascota como si fuera parte de nuestra familia.</h1>
+            <p>Centro integral para mascotas con servicios veterinarios, guardería, adiestramiento y adopción en un entorno natural, seguro y lleno de cariño.</p>
+            <a href="servicios.html">Descubre nuestros servicios</a>
         </section>
+        
+        <!--=================== CARRUSEL IMAGENES (INSTALACIONES INTERIORES Y EXTERIORES) =====================-->
+        <section class="carrusel">
+            <div class="foto">
+                <img src="images/exteriores.png" alt="Exteriores Centro Mascotas">
+            </div>
+            <div class="foto">
+                <img src="images/mostrador-recepcion.png" alt="Zona Recepcion Clientes">
+            </div>
+            <div class="foto">
+                <img src="images/recepcion.png" alt="Zona Espera Clientes">
+            </div>
+             <div class="foto">
+                <img src="images/adiestramiento.png" alt="Adiestramiento Centro Mascotas">
+            </div>
+        </section>
+        <!--=================== SECCIÓN PARA EL ARTICULO (IMPORTANCIA DE LAS MASCOTAS) =====================-->
         <section class="articulo">
             <article>
                 <h4>Para nosotros, son familia</h4>
@@ -80,9 +105,7 @@
                     Porque cuando hablamos de animales, no hablamos solo de cuidados.
                     Hablamos de vínculos, de compañía y de todo lo que aportan a nuestras vidas.
                     Y eso, para nosotras, lo cambia todo.</p>
-
             </article>
-
         </section>
         <!--=================== SECCIÓN SERVICIO DE ADOPCIONES (GALERIA) ===============-->
         <section class="galeria-fotos">
@@ -181,56 +204,49 @@
             <p>Si estás interesado en adoptar o quieres más información sobre alguno de ellos, puedes ponerte en
                 contacto con nuestro equipo.Contactar para adopción</p>
         </section>
+        <!--=================== SECCIÓN PARA LAS RESEÑAS =====================-->
         <section class="resenias">
-            <!--AQUI VAN LAS RESEÑAS-->
-            <div>
-                <div> <img src="images/marta.jpeg" alt="Foto de usuaria Marta">
-                    <img src="images/star.jpeg" alt="Cinco estrellas">
+            <article class="resenia-item">
+                <div class="resenia-img">
+                    <img src="images/marta.jpeg" alt="Foto de usuaria Marta">
+                    <div class="resenia-star">
+                        <img src="images/star.png" alt="Cinco estrellas">
+                        <h3>— Marta G.</h3>
+                    </div>
                 </div>
-                    <p>
-                        Llevo a mi perro a la guardería desde hace meses y no puedo estar más tranquila. Se nota que lo
-                        cuidan
-                        como si fuera suyo. Siempre vuelve contento y eso para mí lo es todo.
-                    <h3>— Marta G.</h3>
-                    </p>
-                </div>
-            
-            <div>
-                <div>
+                <p>Llevo a mi perro a la guardería desde hace meses y no puedo estar más tranquila. Se nota que lo cuidan como si fuera suyo. Siempre vuelve contento y eso para mí lo es todo.</p>
+            </article>
+             <article class="resenia-item">
+                <div class="resenia-img">
                     <img src="images/carlos.jpeg" alt="Foto de usuario Carlos">
-                    <img src="images/star.jpeg" alt="Cinco estrellas">
+                    <div class="resenia-star">
+                        <img src="images/star.png" alt="Cinco estrellas">
+                        <h3>— Carlos M.</h3>
+                    </div>
                 </div>
-                <p>
-                    Adoptamos a nuestro gato aquí y la experiencia fue muy bonita. Nos acompañaron en todo el proceso y
-                    resolvieron todas nuestras dudas.
-                <h3>— Carlos M.</h3>
-                </p>
-            </div>
-            <div>
-                <div>
-                    <img src="images/ana.jpeg" alt="Foto de usuaria Ana">
-                    <img src="images/star.jpeg" alt="Cinco estrellas">
+                <p>Adoptamos a nuestro gato aquí y la experiencia fue muy bonita. Nos acompañaron en todo el proceso y resolvieron todas nuestras dudas.</p>
+            </article>
+            <article class="resenia-item">
+                <div class="resenia-img">
+                     <img src="images/ana.jpeg" alt="Foto de usuaria Ana">
+                    <div class="resenia-star">
+                        <img src="images/star.png" alt="Cinco estrellas">
+                        <h3> — Ana R.</h3>
+                    </div>
                 </div>
-                <p>
-                    Probamos el servicio de peluquería y nos encantó. Mi perrita salió guapísima y, lo más importante,
-                    sin
-                    estrés. Volveremos seguro.
-                <h3> — Ana R.</h3>
-                </p>
-            </div>
-            <div>
-                <div>
+                <p>Probamos el servicio de peluquería y nos encantó. Mi perrita salió guapísima y, lo más importante,sin estrés. Volveremos seguro.</p>
+            </article>
+            <article class="resenia-item">
+                <div class="resenia-img">
                     <img src="images/elena.jpeg" alt="Foto de usuaria Elena">
-                    <img src="images/star.jpeg" alt="Cinco estrellas">
+                    <div class="resenia-star">
+                        <img src="images/star.png" alt="Cinco estrellas">
+                         <h3>— Elena C.</h3>
+                    </div>
                 </div>
-                <p>
-                    Me gusta mucho que no es solo un centro, se nota que realmente aman a los animales. Eso marca la
-                    diferencia.
-                <h3>— Elena C.</h3>
-                </p>
-            </div>
+                <p>Me gusta mucho que no es solo un centro, se nota que realmente aman a los animales. Eso marca la diferencia.</p>
+            </article>
         </section>
-
     </main>
 
 
