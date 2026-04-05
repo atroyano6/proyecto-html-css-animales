@@ -37,7 +37,7 @@ Antes de comenzar la maquetación, se realizó la planificación visual del proy
 En él se definieron la estructura de las páginas, distribución de contenidos, estilo visual y organización general del sitio.
 
 📎 Ver diseño completo:
-👉 (enlace al pdf del repo)
+👉 https://github.com/atroyano6/proyecto-html-css-animales/blob/main/docs/dise%C3%B1o-lucid.pdf
 
 2. Uso de una paleta de colores consistente
 Se estableció una paleta de colores definida desde el inicio del proyecto, aplicada de forma coherente en todas las páginas mediante variables CSS (:root).
@@ -70,6 +70,8 @@ Ejecutar el archivo index.html en el navegador
 No se requiere instalación ni dependencias adicionales.
 
 📸 Capturas
+
+(por hacer)
 
 (INCLUIR CAPTURAS - images)
 
