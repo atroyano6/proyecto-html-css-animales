@@ -5,12 +5,14 @@
 /* =================================== SERVICIOS ================================================ */
 /*(Estefanía 30/03/2026) Ajuste estilos del section*/
 /*class del body es servicios*/
-.servicios {                      /*estilos generales del body*/
-    background-color:var(--marron); 
+.servicios {
+    /*estilos generales del body*/
+    background-color: var(--marron);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.servicios main {                /*estilos del main*/
+.servicios main {
+    /*estilos del main*/
     max-width: 1200px;
     margin: auto;
     background-color: var(--beige);
@@ -108,9 +110,10 @@ tr:hover td {
     /*border: 2px solid gray;  QUITAR*/
 }
 
-.galeria-contenedor {        /*contenedor galeria tarjetas mascotas*/
-    display: flex;               
-    flex-direction: row;     
+.galeria-contenedor {
+    /*contenedor galeria tarjetas mascotas*/
+    display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     height: 700px;
@@ -123,11 +126,12 @@ tr:hover td {
     padding: 20px 10px;
 }
 
-.galeria-item {      /*contenedor/ tarjeta mascota*/
-    display: flex ;
+.galeria-item {
+    /*contenedor/ tarjeta mascota*/
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content:flex-start;
+    justify-content: flex-start;
     background-color: var(--verde);
     border: 2px solid var(--verde-sombras);
     border-radius: 5px;
@@ -139,13 +143,15 @@ tr:hover td {
     align-items: center;
 }
 
-.galeria-item img{      /*imagen tarjeta mascota*/
+.galeria-item img {
+    /*imagen tarjeta mascota*/
     border: 2px solid var(--beige);
     border-radius: 5px;
     width: 100%;
 }
 
-.galeria-item div {    /*texto tarjeta mascota*/
+.galeria-item div {
+    /*texto tarjeta mascota*/
     width: 100%;
     background-color: #f2eadf;
     border: 1px dashed #2a2e27fe;
@@ -156,19 +162,22 @@ tr:hover td {
 
 /* =================================== EQUIPO =================================================== */
 /*class del body es equipo*/
-.equipo {                /*estilos generales del body*/
+.equipo {
+    /*estilos generales del body*/
     background-color: var(--marron);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.equipo main {         /*estilos del main*/
+.equipo main {
+    /*estilos del main*/
     max-width: 1200px;
     margin: auto;
     background-color: var(--beige);
     padding: 40px;
 }
 
-.equipo-texto {      /*contenedor principal */
+.equipo-texto {
+    /*contenedor principal */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -176,23 +185,27 @@ tr:hover td {
 }
 
 
-.fundadoras-contenedor {  /*contenedor 3 fundadoras */
+.fundadoras-contenedor {
+    /*contenedor 3 fundadoras */
     border: 1px solid var(--rosa);
     border-radius: 5px;
 }
 
-.fundadora-item {        /*contenedor 1 fundadora*/
+.fundadora-item {
+    /*contenedor 1 fundadora*/
     display: flex;
     flex-direction: row;
     gap: 20px;
     border: 1px solid var(--verde-claro);
 }
 
-.fundadora-imagen {   /*contenedor imagen*/
+.fundadora-imagen {
+    /*contenedor imagen*/
     width: 50%;
 }
 
-.fundadora-imagen img {      /*estilo img*/
+.fundadora-imagen img {
+    /*estilo img*/
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -200,8 +213,9 @@ tr:hover td {
     border-radius: 5px;
 }
 
-.fundadora-texto {      /*contenedor texto*/
-    
+.fundadora-texto {
+    /*contenedor texto*/
+
 }
 
 
@@ -213,98 +227,73 @@ tr:hover td {
     border: 1px solid blue;
 }
 
-.instalaciones-contenedor {
+.instalaciones-contenedor {}
 
-}
-
-.instalaciones-img {
-
-}
+.instalaciones-img {}
 
 
 
-.instalaciones-texto {
+.instalaciones-texto {}
+
+
+
+
+/* =================================== SOBRE NOSOTRAS =========================================== */
+
+body.sobre {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+     background-color: var(--marron);
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+
     
 }
 
-
-
-
-/* =================================== SOBRE NOSOTRAS =========================================== */ 
-.sobre-nosotras{
-    max-width: 1200px;
-    background-color: var(--beige);
-    margin: auto;
+main {
     padding: 40px;
-}
-body.sobre-nosotras{
-    background-color: var(--marron);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.historia, .mision {
-    max-width: 800px;
-    margin: 20px auto;
+    color: var(--verde-sombras);
+    max-width: 1200px;
+    margin: auto;
     background-color: var(--beige);
-    border-radius: 10px;
-    border: 2px solid var(--verde);
-
-}
-.historia h2, .mision h2{
-    color: var(--rosa-sec);
-
-}
-.fundadoras{
+    margin-top: 20px;
     text-align: center;
+    border: 5px solid var(--verde);
+    border-radius: 15px;
+}
+
+h1,
+h2 {
+    color: #D996A2;
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px var(--rosa-sec);
 
 }
-.cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.card{
-    background-color: var(--beige);
-    border: 2px solid var(--rosa);
-    border-radius: 10px;
-    padding: 15px;
-    width: 280px;
-}
-.card img{
-    width: 100%;
-    border-radius: 10px;
 
-}
-.card h3{
-    color: var(--marron);
-    margin-top: 10px;
+p,
+li {
 
+    line-height: 1.6;
+    text-align: center;
+    list-style: none;
 }
-.rol{
-    color: var(--verde-claro);
-    font-weight: bold;
 
-}
-.card p{
-    font-size: 14px;
-}
-.lista{ 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
+.bloque {
+    background-color:var(--verde-claro)
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border:2px;
+  }
     
-    
-}
-.lista li{
-    padding-left: 20px;
-    list-style-position: inside; 
-    padding: 10px;
-    text-align: left;
-   
-
+.sobre-p {
+    margin-top: 20px;
 }
 
 /* ======================== CONTACTO ====================================================== */
@@ -315,14 +304,16 @@ body.contacto {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.contacto main {                               /*Modifico los selectores porque hay interferencias*/
+.contacto main {
+    /*Modifico los selectores porque hay interferencias*/
     max-width: 1200px;
     margin: auto;
     background-color: var(--beige);
     padding: 40px;
 }
 
-.contacto h1 {                                /*Modifico los selectores porque hay interferencias*/     
+.contacto h1 {
+    /*Modifico los selectores porque hay interferencias*/
     color: var(--rosa);
     text-align: center;
     text-shadow: 1px 1px 3px var(--rosa-sec);
@@ -330,7 +321,8 @@ body.contacto {
     text-transform: uppercase;
 }
 
-.contacto form {                             /*Modifico los selectores porque hay interferencias*/
+.contacto form {
+    /*Modifico los selectores porque hay interferencias*/
     background-color: var(--beige);
     padding: 25px;
     border-radius: 10px;
@@ -577,22 +569,25 @@ td {
     padding: 10px;
 }
 
-/* =================================== TIENDA =================================================== */ 
+/* =================================== TIENDA =================================================== */
 /*(Estefanía 02/04/2026) Estilos del section*/
 /*class del body es tienda*/
-.tienda {                   /*estilos generales del body*/
+.tienda {
+    /*estilos generales del body*/
     background-color: var(--marron);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.tienda main {             /*estilos del main*/
+.tienda main {
+    /*estilos del main*/
     max-width: 1200px;
     margin: auto;
     background-color: var(--beige);
     padding: 40px;
 }
 
-.tienda-contenido {       /*section contenedor 2 bloques (fotos y texto)*/
+.tienda-contenido {
+    /*section contenedor 2 bloques (fotos y texto)*/
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -601,9 +596,10 @@ td {
     gap: 20px;
 }
 
-.tienda-imagenes {       /*---contenedor imagenes----*/
+.tienda-imagenes {
+    /*---contenedor imagenes----*/
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-between;
     padding: 30px;
     gap: 15px;
@@ -613,15 +609,19 @@ td {
     box-shadow: 5px 6px var(--verde-sombras);
 }
 
-.tienda-imagenes img {  /*estilos imagen*/
+.tienda-imagenes img {
+    /*estilos imagen*/
     border: 2px solid var(--beige);
     border-radius: 5px;
     width: 100%;
 }
 
-.tienda-imagenes img:hover { transform:scale(1.5);}
+.tienda-imagenes img:hover {
+    transform: scale(1.5);
+}
 
-.tienda-texto {          /*---contenedor texto---*/
+.tienda-texto {
+    /*---contenedor texto---*/
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -633,26 +633,28 @@ td {
     box-shadow: 5px 6px var(--verde-sombras);
 }
 
-.tienda-texto > * {     /*---estilos de los textos--*/
+.tienda-texto>* {
+    /*---estilos de los textos--*/
     background-color: var(--beige);
     border: 2px solid var(--beige);
     border-radius: 5px;
     padding: 20px;
     text-align: left;
     color: var(--verde-sombras);
-    line-height: 1.6; 
+    line-height: 1.6;
     font-size: medium;
 }
 
-.tienda-texto h1, .tienda-texto h3 {
+.tienda-texto h1,
+.tienda-texto h3 {
     text-transform: uppercase;
-    color:var(--rosa);
+    color: var(--rosa);
     text-shadow: 1px 1px 3px var(--rosa-sec);
 }
 
 .tienda-texto h2 {
     text-transform: uppercase;
-    color:var(--verde);
+    color: var(--verde);
     text-shadow: 1px 1px 3px var(--verde-claro);
     text-align: center;
     font-size: xx-large;
@@ -666,7 +668,8 @@ td {
     margin-bottom: 10px;
 }
 
-.tienda-texto li {    /*estilos lista*/
+.tienda-texto li {
+    /*estilos lista*/
     padding: 8px;
     margin: 5px;
     list-style-type: none;
@@ -675,18 +678,22 @@ td {
     gap: 10px;
 }
 
-.tienda-texto li::before {  /*logo delante del li*/
-    content: " "; /*contenedor vacio*/
+.tienda-texto li::before {
+    /*logo delante del li*/
+    content: " ";
+    /*contenedor vacio*/
     display: inline-block;
     width: 25px;
     height: 25px;
     background-image: url('images/logo-verde.png');
-    background-size: contain; /*no recorta img*/
-    background-repeat: no-repeat; 
-    rotate:35deg; 
+    background-size: contain;
+    /*no recorta img*/
+    background-repeat: no-repeat;
+    rotate: 35deg;
 }
 
-.tienda-texto a {     /*enlace*/
+.tienda-texto a {
+    /*enlace*/
     display: inline-block;
     text-decoration: none;
     background-color: var(--verde-claro);
@@ -703,25 +710,28 @@ td {
 
 /* =================================== NEWSLETTER================================================ */
 /*class del body es newsletter*/
-.newsletter {                  /*estilos generales del body*/
+.newsletter {
+    /*estilos generales del body*/
     background-color: var(--marron);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.newsletter main {  /*estilos del main*/
+.newsletter main {
+    /*estilos del main*/
     max-width: 1200px;
     margin: auto;
     background-color: var(--beige);
     padding: 40px;
 }
 
-.suscripcion {      /*estilos contenedor img y form*/
+.suscripcion {
+    /*estilos contenedor img y form*/
     display: flex;
     flex-wrap: nowrap;
     align-items: stretch;
-    gap:40px;
+    gap: 40px;
     height: auto;
-    width: auto; 
+    width: auto;
     padding: 30px;
     margin: 40px auto;
     background: var(--marron) url('images/fondo-tablero.jpg') no-repeat center;
@@ -731,7 +741,8 @@ td {
     box-shadow: 5px 6px var(--verde-sombras);
 }
 
-.suscripcion form {   /*estilos formulario*/
+.suscripcion form {
+    /*estilos formulario*/
     width: 100%;
     height: auto;
     padding: 25px;
@@ -747,7 +758,8 @@ td {
     text-align: center;
 }
 
-.suscripcion form > h1 {    /*titulo form*/
+.suscripcion form>h1 {
+    /*titulo form*/
     font-size: x-large;
     color: var(--rosa);
     text-transform: uppercase;
@@ -755,16 +767,18 @@ td {
     margin: 0;
 }
 
-.suscripcion form > input[type="email"] {  /*campo email*/
+.suscripcion form>input[type="email"] {
+    /*campo email*/
     border-radius: 5px;
     border: 1px solid var(--verde);
     padding: 10px;
     width: 100%;
 }
 
-.privacidad {            /*bloque del checkbox*/
+.privacidad {
+    /*bloque del checkbox*/
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
@@ -772,19 +786,22 @@ td {
     margin-top: 10px;
 }
 
-.privacidad input[type="checkbox"]{
+.privacidad input[type="checkbox"] {
     width: 18px;
     height: 18px;
 }
 
-.boton {               /*enlace tipo boton*/
+.boton {
+    /*enlace tipo boton*/
     display: block;
     text-decoration: none;
-    text-align: center; 
+    text-align: center;
     font-size: medium;
 }
 
-.boton, .suscripcion form > button {  /*enlace y boton*/
+.boton,
+.suscripcion form>button {
+    /*enlace y boton*/
     border: none;
     border-radius: 5px;
     background-color: var(--verde-claro);
@@ -797,15 +814,18 @@ td {
     width: fit-content;
 }
 
-.boton:hover , .suscripcion form > button:hover {
+.boton:hover,
+.suscripcion form>button:hover {
     background-color: var(--rosa-sec);
 }
 
-.newsletter-logo {   /*estilos contenedor imagen*/
+.newsletter-logo {
+    /*estilos contenedor imagen*/
     max-width: 400px;
 }
 
-.newsletter-logo img { /*estilos imagen*/
+.newsletter-logo img {
+    /*estilos imagen*/
     width: 100%;
     height: 100%;
     border: 2px solid var(--beige);
@@ -815,23 +835,26 @@ td {
 
 /* =================================== SUSCRIPCION ================================================ */
 /*class del body es suscripcion*/
-.suscripcion-realizada {                  /*estilos generales del body*/
+.suscripcion-realizada {
+    /*estilos generales del body*/
     background-color: var(--marron);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.suscripcion-realizada main {  /*estilos del main*/
+.suscripcion-realizada main {
+    /*estilos del main*/
     max-width: 1200px;
     margin: auto;
     background-color: var(--beige);
     padding: 40px;
 }
 
-.bienvenida {                /*contenedor de img y texto*/
+.bienvenida {
+    /*contenedor de img y texto*/
     display: flex;
     flex-wrap: nowrap;
-    align-items:stretch;
-    gap:40px;
+    align-items: stretch;
+    gap: 40px;
     height: auto;
     width: auto;
     padding: 30px;
@@ -842,11 +865,13 @@ td {
     box-shadow: 5px 6px var(--verde-sombras);
 }
 
-.bienvenida-img {          /*contenedor imagen*/
+.bienvenida-img {
+    /*contenedor imagen*/
     max-width: 400px;
 }
 
-.bienvenida-img img {      /*estilos imagen*/
+.bienvenida-img img {
+    /*estilos imagen*/
     width: 100%;
     height: 100%;
     border: 2px solid var(--beige);
@@ -854,7 +879,8 @@ td {
     object-fit: cover;
 }
 
-.bienvenida-texto {      /*contenedor texto*/
+.bienvenida-texto {
+    /*contenedor texto*/
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -865,15 +891,16 @@ td {
     border: 1px dashed var(--verde-sombras);
     border-radius: 5px;
     padding: 20px 20px;
-    text-align: center; 
-    color: var(--verde-sombras); 
+    text-align: center;
+    color: var(--verde-sombras);
 }
 
-.bienvenida-texto a {         /*estilo enlace tipo boton*/
+.bienvenida-texto a {
+    /*estilo enlace tipo boton*/
     display: inline-block;
     width: fit-content;
     text-decoration: none;
-    text-align: center; 
+    text-align: center;
     font-size: medium;
     border: none;
     border-radius: 5px;
@@ -915,8 +942,8 @@ td {
     --rosa-sec: #D996A2;
     --verde: #9DBF8E;
     --verde-claro: #AFBFA3;
-    --verde-sombras:#26321d;
-    --verde-oscuro:#292D26;
+    --verde-sombras: #26321d;
+    --verde-oscuro: #292D26;
     --beige: #F2EADF;
     --marron: #735449;
 }
@@ -925,21 +952,22 @@ td {
 
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Inconsolata:wght@200..900&display=swap');
 
- h1 {
-  font-family: "Inconsolata", monospace;
-  font-optical-sizing: auto;
-  font-size:xx-large;
-  font-weight:bolder;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+h1 {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 /* =================================== BARRA DE NAVEGACIÓN ========================================*/
 /* (Andrea 31/03/2026) Estilos navbar */
 /* (Estefania 1/04/2026) Modifico y añado estilos barra navegacion*/
 
-.nav {     /*contenedor general barra navegacion*/
+.nav {
+    /*contenedor general barra navegacion*/
     max-height: none;
     background: var(--beige) url('images/fondo-tablero.jpg') no-repeat center;
     background-size: cover;
@@ -948,14 +976,16 @@ td {
     border-radius: 0px 0px 20px 20px;
 }
 
-.nav-container {  /*contenedor 2 bloques (fotos y menu)*/
+.nav-container {
+    /*contenedor 2 bloques (fotos y menu)*/
     display: flex;
     justify-content: space-between;
-    align-items:flex-end;
+    align-items: flex-end;
     margin-block-end: 15px;
 }
 
-.nav-logo {     /*------- contenedor imagenes-----------*/
+.nav-logo {
+    /*------- contenedor imagenes-----------*/
     align-self: center;
     display: flex;
     flex-wrap: nowrap;
@@ -966,73 +996,88 @@ td {
     margin-left: 40px;
 }
 
-#logo1 {   /*estilos item logo*/    
+#logo1 {
+    /*estilos item logo*/
     max-height: 70px;
     height: auto;
     margin-bottom: 20px;
-    rotate:210deg ;
+    rotate: 210deg;
 }
 
 #logo2 {
     max-height: 60px;
     height: auto;
     margin-bottom: 20px;
-    rotate:30deg;
+    rotate: 30deg;
 }
 
-#marca {     /*estilos item marca*/
+#marca {
+    /*estilos item marca*/
     max-height: 150px;
     height: auto;
 }
 
-.nav-menu {  /*---------contenedor menu-----------------*/
+.nav-menu {
+    /*---------contenedor menu-----------------*/
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
-    margin: 10px 30px 10px;  /*top right/left bottom*/
+    margin: 10px 30px 10px;
+    /*top right/left bottom*/
 }
 
-.nav-menu li {          /*estilos cajas "li" menu*/
-    display: flex; 
+.nav-menu li {
+    /*estilos cajas "li" menu*/
+    display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     max-width: none;
     background-color: var(--beige);
-    border: 2px solid var(--verde) ;
+    border: 2px solid var(--verde);
     padding: 10px;
     border-radius: 40px 5px;
     box-shadow: 0px 5px var(--verde-sombras);
     list-style-type: none;
-    gap: 8px;  
+    gap: 8px;
 }
 
-.nav-menu li::before {   /*logotipo delante del "li"*/ 
-    content:" ";   /*contenedor vacio*/
+.nav-menu li::before {
+    /*logotipo delante del "li"*/
+    content: " ";
+    /*contenedor vacio*/
     display: inline-block;
     width: 25px;
     height: 25px;
     background-image: url('images/logo-rosa.png');
-    background-size:contain; /*evitar recortar img*/
+    background-size: contain;
+    /*evitar recortar img*/
     background-repeat: no-repeat;
     margin-left: 5px;
-    rotate:35deg ;
+    rotate: 35deg;
 }
 
-.nav-menu a {   /*texto enlaces menu*/
+.nav-menu a {
+    /*texto enlaces menu*/
     text-decoration: none;
     color: var(--verde-sombras);
     font-weight: bold;
 }
 
 /*pseudoclases enlaces y li menu*/
-.nav-menu li:hover {transform: translateY(-8px);}
+.nav-menu li:hover {
+    transform: translateY(-8px);
+}
 
-.nav-menu a:hover {color: var(--rosa);}
+.nav-menu a:hover {
+    color: var(--rosa);
+}
 
-.nav-menu a:active {color: var(--verde);}
+.nav-menu a:active {
+    color: var(--verde);
+}
 
 /* =================================== FOOTER (PIE DE PÁGINA) =====================================*/
 
