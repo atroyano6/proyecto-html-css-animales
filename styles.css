@@ -345,7 +345,7 @@ body.sobre {
     
 }
 
-main {
+.sobre > main {
     padding: 40px;
     color: var(--verde-sombras);
     max-width: 1200px;
@@ -367,8 +367,7 @@ h2 {
 
 }
 
-p,
-li {
+.sobre p, .sobre li {
 
     line-height: 1.6;
     text-align: center;
@@ -376,7 +375,6 @@ li {
 }
 
 .bloque {
-    background-color:var(--verde-claro)
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 30px;
@@ -627,10 +625,10 @@ textarea {
 
 /*Estilos de mapa + info*/
 
-/*article {                                  REVISAR CHOCA CON ARTICULO INDEX
+.mapa {                                 
     margin-top: 40px;
     text-align: center;
-}*/
+}
 
 iframe {
     max-width: 100%;
