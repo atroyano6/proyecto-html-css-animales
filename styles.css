@@ -357,8 +357,7 @@ body.sobre {
     border-radius: 15px;
 }
 
-h1,
-h2 {
+.sobre h1 ,.sobre h2 , .sobre h3{
     color: #D996A2;
     font-family: "Inconsolata", monospace;
     text-align: center;
@@ -367,12 +366,20 @@ h2 {
 
 }
 
-.sobre p, .sobre li {
+
+.sobre p, .bloque li {
 
     line-height: 1.6;
     text-align: center;
     list-style: none;
 }
+.valores li{
+    list-style: decimal;
+    list-style-position: inside;
+    text-align: justify;
+}
+
+
 
 .bloque {
     border-radius: 20px;
