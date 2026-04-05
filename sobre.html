@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!--Rozilene Amorim 
+27/03/2026 creacion de estructura basica
+04/04/2026 anadiendo estilos
+05/04/2026 finalizado para entrega
+-->
+
+
+
 <html lang="en">
 
 <head>
@@ -6,6 +14,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotras</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Inconsolata:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo-rosa.png">
 </head>
 
 <body>
@@ -13,145 +26,118 @@
     <header>
         <nav class="nav">
             <div class="nav-container">
-                <a href="index.html" class="logo">
-                    <img src="images/logotipo.png" alt="Logo La Cola Feliz">
-                </a>
-
+                <div class="nav-logo">
+                    <img src="images/logo-rosa.png" alt="Logo La Cola Feliz" id="logo1">
+                    <a href="index.html"><img src="images/marca-verde-sombras.png" alt="Marca La Cola Feliz"
+                            id="marca"></a>
+                    <img src="images/logo-rosa.png" alt="Logo La Cola Feliz" id="logo2">
+                </div>
                 <ul class="nav-menu">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="equipo.html">Equipo</a></li>
                     <li><a href="sobre.html">Sobre nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main class="sobre-nosotras">
-        <h1>Sobre Nosotras</h1>
-        <section class="historia">
-            <article>
+    <!-- CONTENIDO -->
+    <main>
 
-                <h2>Nuestra Historia</h2>
-                <p>
-                    En <strong>La Cola Feliz</strong> nacimos con una idea muy clara: crear un espacio donde el cuidado
-                    animal fuese cercano, profesional y lleno de cariño.
-                    Desde nuestros inicios en Granada, hemos trabajado para convertirnos en un punto de referencia en
-                    salud, bienestar y estética animal.
-                </p>
-                <p>
-                    Lo que comenzó como una pequeña clínica veterinaria ha evolucionado hasta convertirse en un espacio
-                    integral donde combinamos atención médica,
-                    peluquería especializada y asesoramiento personalizado para cada familia.
-                </p>
-            </article>
+        <h1>Sobre La Cola Feliz</h1>
+
+        <section class="bloque">
+            <h2> Nuestra historia</h2>
+            <p>
+                La Cola Feliz nace del amor incondicional por los animales y de la convicción de que cada mascota
+                merece ser tratada como un miembro más de la familia.
+            </p>
+
+            <p>
+                El proyecto fue fundado por tres mujeres apasionadas por el bienestar animal, que decidieron unir su
+                experiencia en el cuidado, la salud y la educación de mascotas para crear un espacio único donde los
+                animales pudieran recibir una atención integral en un entorno natural, seguro y lleno de cariño.
+            </p>
+
+            <p>
+                Desde el principio, La Cola Feliz no quiso ser solo un centro veterinario, ni solo una guardería, ni
+                únicamente un lugar de adopción. Quiso convertirse en algo más: un espacio donde los animales se
+                sintieran protegidos, comprendidos y cuidados en todas las etapas de su vida.
+            </p>
         </section>
-        <section class="mision">
 
-            <article class="lista">
-                <h2>Nuestra Misión</h2>
-                <p>Nuestro objetivo es mejorar la vida de cada animal que pasa por nuestras manos:</p>
-                <ol>
-                    <li>Ofrecer atención veterinaria cercana, honesta y de calidad.</li>
-                    <li>Garantizar el bienestar físico y emocional de cada mascota.</li>
-                    <li>Fomentar la adopción responsable y la educación animal.</li>
-                    <li>Crear un entorno seguro donde cada animal se sienta cuidado.</li>
-                </ol>
-            </article>
+        <section class="bloque">
+            <h2> Qué ofrecemos</h2>
+            <p>
+                Con el paso del tiempo, este proyecto ha ido creciendo hasta consolidarse como un centro completo,
+                ubicado en plena naturaleza, con instalaciones diseñadas para ofrecer un servicio global:
+            </p>
 
-
+            <ul>
+                <li>Atención veterinaria</li>
+                <li>Peluquería canina y felina</li>
+                <li>Adiestramiento y educación</li>
+                <li>Guardería y residencia</li>
+                <li>Refugio y adopciones</li>
+                <li>Próximamente: tienda online especializada</li>
+            </ul>
         </section>
-        <section class="fundadoras">
 
+        <section class="bloque">
+            <h2> Nuestra misión</h2>
+            <p>
+                Ofrecer un cuidado integral y responsable a cada mascota, garantizando su bienestar en todas las áreas
+                de su vida.
+            </p>
 
+            <ul>
+                <li>Atención profesional de calidad</li>
+                <li>Trato individualizado</li>
+                <li>Entorno seguro y tranquilo</li>
+                <li>Acompañamiento a las familias</li>
+                <li>Relación basada en respeto y empatía</li>
+            </ul>
+        </section>
 
-            <h2>Fundadoras</h2>
+        <section class="bloque">
+            <h2> Nuestra visión</h2>
+            <p>
+                Consolidarnos como un centro de referencia en el cuidado integral de mascotas, donde la profesionalidad
+                y el trato humano vayan siempre de la mano.
+            </p>
 
-            <div class="cards">
-                <article class="card">
-                    <img src="images/andrea.png" alt="Veterinaria sonriente en clínica">
-                    <h3> Andrea Troyano</h3>
-                    <p class="rol">
-                        Veterinaria </p>
+            <ul>
+                <li>Ser un espacio de confianza</li>
+                <li>Fomentar el respeto animal</li>
+                <li>Impulsar la adopción responsable</li>
+                <li>Integrar servicios y productos</li>
+                <li>Crecimiento sostenible</li>
+            </ul>
+        </section>
 
-                    <p>
-                        Andrea es especialista en medicina preventiva y bienestar animal. Su trato cercano y su pasión
-                        por los animales hacen que cada consulta sea una experiencia tranquila tanto para mascotas como
-                        para sus dueños.
-                    </p>
+        <section class="bloque">
+            <h2> Nuestros valores</h2>
 
-                </article>
-                <article class="card">
-                    <img src="images/estefania.png" alt="Peluquera canina trabajando">
-                    <h3> Estefania Lopes</h3>
-                    <p class="rol"> Peluquera canina</p>
-                    <p>
-                        Experta en estética animal, Estefanía combina técnica y sensibilidad para ofrecer cortes
-                        adaptados a cada raza, siempre priorizando la comodidad del animal.
-                    </p>
-
-                </article>
-                <article class="card">
-                    <img src="images/rozilene.png" alt="Especialista en comportamiento animal">
-                    <h3>Rozilene Amorim</h3>
-                    <p class="rol">Adestradora
-
-                    </p>
-                    <p>
-                        Especializada en comportamiento canino, ayuda a mejorar la convivencia entre mascotas y familias
-                        mediante técnicas respetuosas y efectivas.
-                    </p>
-
-                </article>
-
+            <div class="valores">
+                <div class="valor">Amor por los animales</div>
+                <div class="valor">Respeto por cada vida</div>
+                <div class="valor">Profesionalidad con empatía</div>
+                <div class="valor">Adopción responsable</div>
+                <div class="valor">Honestidad</div>
+                <div class="valor">Compromiso</div>
             </div>
-            </article>
+
+            <p class="sobre-p">
+                Creemos firmemente que los animales no son cosas. Son compañeros, familia y apoyo emocional.
+            </p>
         </section>
-        <section class="articulo">
-            <article>
-                <h4>Para nosotros, son familia</h4>
-                <p>
-                    Para muchas personas, su mascota es su mejor amigo.
-                    Para otras, es compañía en el día a día.
-                    Para otras, es ese hogar que no siempre se puede explicar con palabras.
-                    Para nosotras, son familia.
-                    En La Cola Feliz no entendemos el cuidado animal como un servicio más. Lo entendemos como una
-                    responsabilidad que nace del vínculo real que existe entre las personas y sus mascotas. Un vínculo
-                    que va mucho más allá de lo práctico, que forma parte de la vida, de la rutina y también de lo
-                    emocional.
-                </p>
 
-                <p> Las fundadoras de este proyecto han convivido siempre con animales. Han crecido con ellos, han
-                    aprendido de ellos y han construido su forma de entender el mundo a su lado. Sabemos lo que
-                    significa observar cualquier cambio en su comportamiento, preocuparnos cuando no están bien o sentir
-                    tranquilidad simplemente con su presencia.
-                    Por eso, cuando una persona confía en nosotros, sabemos exactamente lo que hay detrás de esa
-                    decisión.
-                    Cuando alguien deja a su perro en nuestra guardería,
-                    cuando trae a su gato a una consulta veterinaria,
-                    cuando nos pide ayuda para educar a su cachorro…
-                    No está dejando un animal.
-                </p>
-
-                <p>Está depositando su confianza en nosotros para cuidar de alguien importante en su vida.
-                    Y esa confianza es algo que respetamos profundamente.
-                    Nuestro compromiso no es solo profesional. Es también personal. Cada mascota que entra en nuestro
-                    centro es atendida desde el respeto, la paciencia y la cercanía, adaptándonos a su carácter, a sus
-                    necesidades y a su forma de relacionarse.
-                    Porque no hay dos animales iguales.</p>
-                <p>
-                    Y porque cada historia merece ser tratada como única.
-                    En La Cola Feliz trabajamos cada día con una idea muy clara:
-                    cuidar de ellos como nos gustaría que cuidaran de los nuestros.
-                    Porque cuando hablamos de animales, no hablamos solo de cuidados.
-                    Hablamos de vínculos, de compañía y de todo lo que aportan a nuestras vidas.
-                    Y eso, para nosotras, lo cambia todo.</p>
-
-            </article>
-
-        </section>
     </main>
+
+
 
     <footer class="footer">
         <div class="footer-container">
@@ -160,6 +146,7 @@
                 <h3>Horario</h3>
                 <p>Lunes a viernes: 09:00 - 18:00</p>
                 <p>Sábado: 10:00 - 14:00</p>
+                <p>Urgencias 24h</p>
             </div>
 
             <div>
@@ -174,9 +161,19 @@
                 <p>Email: info@lacolafeliz.com</p>
             </div>
 
+            <div>
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="politicaprivacidad.html">Privacidad</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                </ul>
+            </div>
+
         </div>
 
-        <p class="copyright">© 2026 La Cola Feliz</p>
+        <p class="copyright">
+            © 2026 La Cola Feliz
+        </p>
     </footer>
 </body>
 
