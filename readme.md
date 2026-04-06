@@ -13,21 +13,34 @@ El proyecto pone el foco en la maquetación con HTML y CSS, la coherencia visual
 
 📁 Estructura del proyecto:
 
-/project
+/project  
+
 │
-├── index.html
-├── servicios.html
-├── equipo.html
-├── sobre.html
-├── contacto.html
-├── tienda.html
-├── newsletter.html
-├── suscripcion.html
-├── politicaprivacidad.html
+├── index.html  
+
+├── servicios.html  
+
+├── equipo.html  
+
+├── sobre.html  
+
+├── contacto.html  
+
+├── tienda.html  
+
+├── newsletter.html  
+
+├── suscripcion.html  
+
+├── politicaprivacidad.html  
+
 │
-├── styles.css
-|__ docs/
-├── images/
+├── styles.css  
+
+|__ docs/  
+
+├── images/  
+
 └── .git/
 
 ⚙️ Decisiones técnicas:
@@ -71,9 +84,22 @@ No se requiere instalación ni dependencias adicionales.
 
 📸 Capturas
 
-(por hacer)
+![captura-index](https://github.com/user-attachments/assets/e345517f-9f0f-4d86-8d32-c748f5c4d7da)
 
-(INCLUIR CAPTURAS - images)
+![captura-servicios](https://github.com/user-attachments/assets/26c48c4f-7f7f-4c30-8e1c-01959a859dca)
+
+![captura-equipo](https://github.com/user-attachments/assets/aa7d13a4-e763-458f-be4c-72fd510e665e)
+
+![captura-sobre](https://github.com/user-attachments/assets/9f470d87-8dd0-493e-8ef0-9e15bef1d50b)
+
+![captura-contacto](https://github.com/user-attachments/assets/9092154e-e087-42c9-8660-9d066ec16ad9)
+
+![captura-tienda](https://github.com/user-attachments/assets/0f01a587-a699-4464-b26d-1ff0af73bd6f)
+
+![captura-newsletter](https://github.com/user-attachments/assets/75551087-ebb5-444d-a703-64a61df95a70)
+
+![captura-suscripcion](https://github.com/user-attachments/assets/11c255ec-3b27-449e-a272-1a70e6137d20)
+
 
 📌 Notas
 El proyecto está optimizado para visualización en escritorio
