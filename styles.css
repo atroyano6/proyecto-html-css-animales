@@ -844,6 +844,9 @@ iframe {
 article p {
     color: var(--marron);
 }
+.mapa p {
+    text-align: center;
+}
 
 /*Estilos tabla horaria*/
 
