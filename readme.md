@@ -67,6 +67,24 @@ Esto ha permitido construir layouts estructurados, alineaciones complejas y una 
 5. Separación de estilos por contexto mediante clases en el <body>
 Cada página incluye una clase específica en la etiqueta <body> (por ejemplo: .servicios, .contacto, .newsletter), lo que permite aplicar estilos independientes sin interferencias entre secciones.
 
+6. Diseño de flujo de navegación y experiencia de usuario (UX).
+Se ha diseñado un flujo de navegación guiado con el objetivo de facilitar la experiencia del usuario y dirigirlo hacia las acciones clave dentro de la web. Desde la página de inicio, el usuario es conducido mediante llamadas a la acción claras (como “Descubre nuestros servicios”), además de contar con una navegación global accesible en todo momento mediante el menú principal y el footer.
+
+A lo largo del sitio, se han incorporado accesos directos estratégicos:
+- En la página de servicios, el usuario puede navegar directamente entre secciones (veterinaria, peluquería, residencia, etc.).
+- Se incluyen botones de contacto en puntos clave para evitar fricción (por ejemplo, dudas sobre servicios o procesos de adopción).
+- Desde distintas secciones se puede acceder a la tienda o a la newsletter sin necesidad de volver al menú principal.
+
+Además, se han diseñado flujos cerrados en acciones importantes, como:
+- Envío del formulario de contacto.
+- Suscripción a la newsletter.
+- En estas páginas finales se elimina la barra de navegación para centrar la atención del usuario en una única decisión (finalizar la acción o volver al inicio), evitando distracciones.
+
+Este enfoque permite:
+1. Mejorar la claridad del recorrido del usuario.
+2. Reducir la sobrecarga de opciones en momentos clave.
+3. Reforzar los objetivos principales del sitio (contacto, conversión y navegación intuitiva).
+
 👩‍💻 Equipo
 
 Proyecto desarrollado por:
