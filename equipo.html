@@ -2,6 +2,7 @@
  Nombre: Estefanía Molina 
  Fecha: 21/03/2026 (construccion de la estructura)
  03/04/2026 (introduccion barra navegación, modificación del html y dar estilos en css.)
+ 05/04/2026 (estilos css )
  Página de Equipo-->
 <!DOCTYPE html>
 <html lang="en">
@@ -50,13 +51,13 @@
                 <!--=========== ARTICULO PARA CADA FUNDADORA =======================-->
                 <article class="fundadora-item"> 
                     <div class="fundadora-imagen">
-                        <img src="images/andrea.png" alt="andrea veterinaria"> <!--Faltan las imagenes de las fundadoras-->
+                        <img src="images/andrea.png" alt="Andrea Veterinaria"> 
                     </div>
                     <div class="fundadora-texto">
                         <h3>Andrea — Veterinaria y cofundadora</h3>
                         <p>Andrea es licenciada en Veterinaria y cuenta con más de diez años de experiencia en clínica y atención animal. Su especialidad es la medicina preventiva y el seguimiento integral de la salud de las mascotas.</p>
                         <p>Desde pequeña ha convivido con animales, lo que marcó su vocación y la llevó a dedicar su vida a cuidarlos y protegerlos.</p>
-                        <ul>
+                        <ul class="lista-logo">
                             <li>Experiencia: más de 10 años en clínica veterinaria.</li>
                             <li>Especialidad: medicina preventiva y bienestar animal.</li>
                         </ul>
@@ -65,13 +66,13 @@
                 </article>
                 <article class="fundadora-item">
                     <div class="fundadora-imagen">
-                        <img src="images/rozilene.png" alt="rozilene educadora"> <!--Faltan las imagenes de las fundadoras-->
+                        <img src="images/rozilene.png" alt="Rozilene Educadora">
                     </div>
                         <div class="fundadora-texto">
                         <h3>Rozilene — Educadora canina y cofundadora</h3>
                         <p>Rozilene es técnica en adiestramiento y modificación de conducta, especializada en educación respetuosa y en la rehabilitación de perros procedentes de refugio.</p>
                         <p>Su trabajo se basa en entender el comportamiento animal para mejorar la convivencia entre personas y mascotas</p>
-                        <ul>
+                        <ul class="lista-logo">
                             <li>Experiencia: educación canina y trabajo con refugios.</li>
                             <li>Especialidad: adiestramiento y conducta.</li>
                         </ul>
@@ -80,13 +81,13 @@
                 </article>
                 <article class="fundadora-item">
                     <div class="fundadora-imagen">
-                        <img src="images/estefania.png" alt="estefania direccion"> <!--Faltan las imagenes de las fundadoras-->
+                        <img src="images/estefania.png" alt="Estefania Direccion">
                     </div>
                     <div class="fundadora-texto">
                         <h3>Estefanía — Dirección y cuidado animal</h3>
                         <p>Estefanía se encarga de la organización del centro, la coordinación del equipo y el funcionamiento de la guardería y la residencia.</p>
                         <p>Su experiencia en cuidado animal y gestión hace posible que cada área funcione de forma ordenada, profesional y siempre centrada en el bienestar de los animales.</p>
-                        <ul>
+                        <ul class="lista-logo">
                             <li>Experiencia: gestión y cuidado animal.</li>
                             <li>Especialidad: organización y residencia.</li>
                         </ul>
@@ -96,9 +97,9 @@
             <!---============== BLOQUE II PARA EL EQUIPO ============================-->
            <div class="equipo-colaborador">
                 <h2>El Equipo Colaborador</h2>
-                <p>Este proyecto es posible gracias a la colaboración de otras profesionales y voluntarias que comparten nuestra misma forma de entender el cuidado animal. 
+                <p>Este proyecto es posible gracias a la colaboración de otras profesionales y voluntarias que comparten nuestra misma forma de entender el cuidado animal.</p>
                 <p>Contamos con un equipo multidisciplinar formado por: </p>
-                <ul>
+                <ul class="lista-logo">
                     <li>Veterinarias</li>
                     <li>Auxiliares clínicas</li>
                     <li>Recepción y atención al cliente</li>
@@ -109,28 +110,42 @@
                     <li>Voluntarias de refugio</li>
                 </ul>
                 <p>Cada una de ellas aporta su experiencia y su dedicación para que el centro funcione cada día con el mismo nivel de compromiso.</p>
+                <h3>Colaboración con asociaciones</h3>
+                <p>En La Cola Feliz colaboramos con asociaciones y proyectos de protección animal que trabajan por el bienestar y la adopción responsable de perros y gatos.</p>
+                <ul class="lista-logo">
+                    <li><a href="https://aristochat.es/" class="boton">Aristochat</a>Asociación especializada en bienestar felino y adopción responsable, ayudando a crear hogares adaptados para gatos.</li>
+                    <li><a href="https://faada.org/" class="boton">FADA</a>Red nacional dedicada a la protección animal y apoyo a centros de acogida.</li>
+                    <li>Protectoras locales - Colaboramos con entidades de rescate y adopción en nuestro entorno.</li>
+                </ul>
             </div>
              <!---============== BLOQUE III PARA EL EQUIPO ==========================-->
             <div class="voluntariado">
-                <h2>Voluntariado y refugio</h2>
-                <p>Nuestro refugio funciona también gracias a la ayuda de personas que colaboran de forma voluntaria.Su trabajo es fundamental para cuidar, pasear y socializar a los animales que están esperando una familia.</p>
-                <p>Gracias a su esfuerzo, muchos perros y gatos pueden encontrar un hogar.</p>
-                <p>Si quieres colaborar con nosotros como voluntario, puedes ponerte en contacto a través de nuestro formulario.</p>
-                <p><a href="contacto.html" target="_self" title="Ir al formulario de contacto">Contactar para voluntariado</a></p>
+                <div>
+                    <img src="images/voluntarios.jpeg" alt="Familia Voluntarios Refugio">
+                </div>
+                <div>
+                    <h2>Voluntariado y refugio</h2>
+                    <p>Nuestro refugio funciona también gracias a la ayuda de personas que colaboran de forma voluntaria.Su trabajo es fundamental para cuidar, pasear y socializar a los animales que están esperando una familia.</p>
+                    <p>Gracias a su esfuerzo, muchos perros y gatos pueden encontrar un hogar.</p>
+                    <p>Si quieres colaborar con nosotros como voluntario, puedes ponerte en contacto a través de nuestro formulario.</p>
+                    <p><a href="contacto.html" target="_self" title="Ir al formulario de contacto" class="click">Contactar para voluntariado</a></p>
+                </div>
             </div>
         </section>
         <!--=================== SECCIÓN PARA LAS INSTALACIONES (LISTA) =====================-->
         <section class="instalaciones-contenedor">
-            <h1>Nuestras instalaciones</h1>
+            <h2>Nuestras instalaciones</h2>
             <div class="instalaciones-img">
-                <img src="images/instalaciones.png" alt="imagen instalaciones la cola feliz">
+                <img src="images/exteriores.png" alt="Instalaciones Exteriores Centro">
+                <img src="images/mostrador.jpeg" alt="Zona Mostrador Tienda">
+                <img src="images/adiestramiento.png" alt="Zona Adiestramiento Mascotas">
             </div>
             <div class="instalaciones-texto">
                 <p>La Cola Feliz se encuentra en un entorno natural privilegiado, diseñado especialmente para el bienestar, la tranquilidad y la seguridad de los animales.</p>
                 <p>Nuestro centro está construido siguiendo un estilo ecológico y moderno, inspirado en la arquitectura sostenible. Las instalaciones combinan madera, piedra y grandes superficies de cristal, creando un espacio luminoso, acogedor y perfectamente integrado en la naturaleza.</p>
                 <p>El objetivo es ofrecer a cada mascota un lugar donde pueda sentirse libre, relajada y protegida, lejos del ruido y del estrés de la ciudad.</p>
                 <p>Contamos con un gran recinto adaptado para cubrir todas sus necesidades:</p>
-                <ul>
+                <ul class="lista-logo">
                     <li>Clínica veterinaria totalmente equipada.</li>
                     <li>Zona de peluquería profesional.</li>
                     <li>Amplias áreas de juego al aire libre</li>

@@ -1,13 +1,98 @@
+/* =================================== ESTILOS PARA OBJETOS COMUNES A TODAS LAS PÁGINAS ============================================*/
+/*==================================== GENERALES ================================================= */
+/*(Estefanía 30/03/2026) Ajuste estilos generales*/
+* {
+    box-sizing: border-box;
+    /* Resetear (dimension total real)*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body {                      /*estilos comunes en todas las pag: body*/
+   background-color:var(--marron); 
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: var(--verde-sombras);
+}
+
+main {                     /*estilos comunes en todas las pag: main*/
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--beige);
+    padding: 40px;
+}
+
+/*(Andrea 30/03/2026)*/
+/* Colores globales */
+:root {
+    --rosa: #F294A5;
+    --rosa-sec: #D996A2;
+    --verde: #9DBF8E;
+    --verde-claro: #AFBFA3;
+    --verde-sombras: #26321d;
+    --verde-oscuro: #292D26;
+    --beige: #F2EADF;
+    --marron: #735449;
+}
+
+/*Fuente de títulos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Inconsolata:wght@200..900&display=swap');
+
+h1 {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    text-transform: uppercase;
+    color: var(--rosa);
+    text-shadow: 1px 1px 3px var(--rosa-sec);
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: var(--verde);
+    text-shadow: 1px 1px 3px var(--verde-claro);
+    text-align: center;
+    font-size: x-large;
+}
+
+p {
+   margin-bottom: 10px;
+   font-size: medium;
+   color: var(--verde-sombras);
+   text-align: left; 
+}
+
 /* =================================== HOME(INDEX) ============================================== */
-/*-----------------Estefania (05/04/2026) estilos seccion galeria-----------------*/
+/*---Estefania (05/04/2026) estilos seccion galeria-----------------*/
+.impact {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--beige);
+    border-radius: 5px;
+}
+.impact h1 {
+    margin-bottom: 20px;
+    color: var(--marron);
+}
+
+.impact p {
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+}
+
 .carrusel {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     gap: 5px;
-    border: 2px solid var(--rosa);
+    border: 2px solid var(--beige);
     border-radius: 5px;
     background-color: var(--verde);
     margin: 40px auto;
@@ -16,6 +101,7 @@
     position: relative;   
     left: 50%;
     transform: translateX(-50%);
+    overflow: hidden;     /*evita salirse la foto*/
 }
 
 .foto  > img {
@@ -27,11 +113,11 @@
     transform:scale(1.5);
 }
 
-/*-----------------Estefania (05/04/2026) estilos seccion reseñas-----------------*/
+/*---Estefania (05/04/2026) estilos seccion reseñas-----------------*/
 .resenias {                   /*contenedor principal section*/
     display: flex;               
     flex-direction: row;     
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 30px;
@@ -97,25 +183,12 @@
 }
 
 /* =================================== SERVICIOS ================================================ */
-/*(Estefanía 30/03/2026) Ajuste estilos del section*/
+/*(Estefanía 30/03/2026 y 05/04/2026) Ajuste estilos del section*/
 /*class del body es servicios*/
-/*
-.servicios {                      
-    background-color:var(--marron); 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.servicios main {                
-    max-width: 1200px;
-    margin: auto;
-    background-color: var(--beige);
-    padding: 40px;
-}*/
-
 .contenedor-servicios {
     display: flex;
     flex-direction: column;
-
+    margin-top: 40px;
 }
 
 /*----------Galeria Servicios---------*/
@@ -123,226 +196,381 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
+    justify-content: space-around;
+    align-items: center;
     align-content: space-evenly;
-    gap: 40px 130px;
+    gap: 30px 30px;
+    max-width: 1100px;
+    margin: 30px auto;   /*centrado iz/dr*/
 }
 
+.ficha {                /*contenedor img y titulo*/
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    align-items: center;
+    gap: 8px;
+    max-width: 250px;
+}
+
+.ficha:hover {
+    transform: translateY(-5px);
+}
+
+.ficha div:nth-child(2) {            /*titulo*/
+    background-color: var(--rosa-sec) ;
+    border: 2px solid var(--rosa);
+    color: var(--beige);
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+}
+
+.ficha img {                    /*img servicios*/
+    max-height: 275px;
+    height:100%;
+    border: 2px solid var(--verde-sombras);
+    border-radius: 5px;
+    box-shadow: 1px 1px var(--verde-sombras);
+}
 
 /*---------------Tabla----------------*/
-.contenedor-tabla {
-    /*Estilos div tabla*/
+.contenedor-tabla {             /*estilos div tabla*/
     overflow-x: auto;
-    width: 100%;
-    background-color: burlywood;
-    padding: 20px 10px 20px 10px;
-    /*margin: 5px 5px 5px 5px;*/
-    /*border: 2px solid gray; QUITAR*/
-    /*overflow-x: auto;*/
+    max-width: 900px;
+    padding: 0px 0px 0px 0px;
+    margin: 20px auto;
 }
 
-.tabla-servicios,
-th,
-td {
+.tabla-servicios,th,td {        /*Estilos tabla*/
     width: auto;
-    /*Estilos tabla*/
     border-collapse: collapse;
+    font-size:small;
 }
 
-th {
-    border: 2px solid #f2eadf;
+.tabla-servicios > caption {    
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    color: var(--marron);
+    font-family: "Inconsolata",monospace;
+}
+
+.tabla-servicios th {
+    font-family: "Inconsolata",monospace;
+    border: 2px solid var(--beige);
     height: 30px;
     padding: 10px;
-    background-color: #AFBFA3;
+    background-color: var(--verde);
     text-align: center;
     vertical-align: auto;
+    text-transform:uppercase;
 }
 
-td {
+.tabla-servicios td {
     height: 20px;
-    border-bottom: 1px dashed #2a2e27fe;
-    background-color: #f2eadf;
+    border-bottom: 1px dashed var(--verde-sombras);
+    background-color: var(--beige);
     text-align: left;
-
 }
 
-tfoot td {
+.tabla-servicios > tfoot td {
     padding: 10px;
-    background-color: #AFBFA3;
-    border: 2px solid #f2eadf;
+    background-color: var(--verde-claro);
+    border: 2px solid var(--beige);
 }
 
-    {
+.tabla-servicios > tfoot .click {
+    display: inline-block;
+}
+
+.tabla-servicios tr:hover td {
+    background-color: var(--rosa-sec);
+    border-color: var(--rosa);
+}
+
+.click {                     /*enlace a tienda*/
+    display:block;
+    text-decoration: none;
     text-align: center;
-    background-color: #AFBFA3;
-    border: 2px solid #f2eadf;
-    padding: 5px;
-}
-
-div.galeria-servicios img {
-    height: 300px;
-    /*PENDIENTE DE AJUSTAR*/
-    border: 2px solid #2a2e27fe;
+    border:none;
     border-radius: 5px;
+    background-color: var(--rosa-sec);
+    color:var(--beige);
+    padding: 6px 12px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
-tr:hover td {
-    background-color: #D996A2;
-    border-color: #F294A5;
+.click:hover {
+    background-color: var(--rosa-sec);
 }
 
-/*---------------Galeria--------------*/
+/*---------------Galeria adopcion--------------*/
 .galeria-fotos {
     /*Estilos section galeria*/
-    display: block;
-    /*por defecto*/
+    display: block;     /*por defecto*/
     width: 100%;
     padding: 5px 5px;
-    border: 2px solid gray;
 }
 
 .galeria-contenedor {
     /*contenedor galeria tarjetas mascotas*/
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    height: 700px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
     align-items: center;
-    background: #735449 url('images/fondo-tablero.jpg') no-repeat center;
+    background: var(--marron) url('images/fondo-tablero.jpg') no-repeat center;
     background-size: cover;
     border-radius: 5px;
-    border: 3px solid #735449;
-    margin: 30px 10px;
-    padding: 20px 10px;
+    border: 2px solid var(--marron);
+    margin: 40px auto;
+    padding: 40px 10px;
 }
 
-.galeria-item {
-    /*contenedor/ tarjeta mascota*/
+.galeria-titulo {             /*titulo galeria adopcion*/
+    width: 100%;
+    background-color: var(--beige);
+    border: 1px dashed var(--verde-sombras);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.galeria-titulo  p, .galeria-titulo h3 {
+    text-align: center;
+}
+
+.galeria-item {            /*contenedor tarjeta mascota*/
+    flex: 1;
+    height: 470px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    align-items: center;
     background-color: var(--verde);
     border: 2px solid var(--verde-sombras);
     border-radius: 5px;
     box-shadow: 5px 6px var(--verde-sombras);
     margin: 30px;
     padding: 10px;
-    width: 250px;
-    height: 500px;
-    align-items: center;
 }
 
-.galeria-item img {
-    /*imagen tarjeta mascota*/
+.galeria-item img {         /*imagen tarjeta mascota*/
     border: 2px solid var(--beige);
     border-radius: 5px;
     width: 100%;
 }
 
-.galeria-item div {
-    /*texto tarjeta mascota*/
+.galeria-item div {        /*texto tarjeta mascota*/
+    flex: 1;
     width: 100%;
-    background-color: #f2eadf;
-    border: 1px dashed #2a2e27fe;
+    background-color: var(--beige);
+    border: 1px dashed var(--verde-sombras);
     border-radius: 5px;
     margin-top: 40px;
     padding: 20px;
 }
 
-/* =================================== EQUIPO =================================================== */
-/*class del body es equipo*/
-.equipo {
-    /*estilos generales del body*/
-    background-color: var(--marron);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.galeria-item .mascota p {
+    font-size:small;
 }
 
-.equipo main {
-    /*estilos del main*/
-    max-width: 1200px;
-    margin: auto;
+/*-----bloques de texto---*/
+.descripcion {
+    border: 2px solid var(--rosa);
+    border-radius: 5px;
+    background-color: var(--rosa-sec);
+    box-shadow: var(--verde-claro);
+    margin: 40px auto;
+    padding: 20px 20px 20px 20px;
+}
+
+.descripcion > p {
+    padding-bottom: 10px;
     background-color: var(--beige);
-    padding: 40px;
+    border-radius: 5px;
+    padding: 10px 10px; 
 }
 
-.equipo-texto {
-    /*contenedor principal */
+.descripcion > h2 {
+    padding-bottom: 15px;
+    color: var(--beige);
+    text-shadow: 1px 1px 3px var(--marron);
+}
+
+.titulo-seccion {
+    font-size: xx-large;
+    margin: 40px 0px 20px 0px;
+    
+}
+
+/* =================================== EQUIPO =================================================== */
+/*Estefania Molina (05/04/2026) ajustes de los estilos  */
+/*class del body es equipo*/
+.equipo-texto {                   /*contenedor principal */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 40px auto;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
+.fundadoras-contenedor {        /*contenedor 3 fundadoras */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid var(--rosa);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: var(--rosa-sec); 
+}
 
-.fundadoras-contenedor {
-    /*contenedor 3 fundadoras */
+.fundadoras-contenedor > h2, .fundadoras-contenedor > p {
+    background-color: var(--beige);
     border: 1px solid var(--rosa);
     border-radius: 5px;
+    padding: 10px;
 }
 
-.fundadora-item {
-    /*contenedor 1 fundadora*/
+
+.fundadora-item {                /*contenedor 1 fundadora*/
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
-    border: 1px solid var(--verde-claro);
+    border: 2px solid var(--rosa);
+    background-color: var(--beige);
+    border-radius: 5px;
+    padding: 15px;
 }
 
-.fundadora-imagen {
-    /*contenedor imagen*/
-    width: 50%;
+.fundadora-item:hover {          /*movimiento a la tarjeta*/
+    transform:translateY(-5px); 
 }
 
-.fundadora-imagen img {
-    /*estilo img*/
+.fundadora-imagen {     /*contenedor imagen*/
+    width: 180px; 
+    flex-shrink: 0;
+}
+
+.fundadora-imagen img {      /*estilo img*/
     width: 100%;
     height: auto;
     object-fit: cover;
     border: 2px solid var(--verde-sombras);
+    box-shadow: 2px 2px var(--verde-sombras);
     border-radius: 5px;
 }
 
-.fundadora-texto {
-    /*contenedor texto*/
-
+.fundadora-texto {        /*contenedor texto*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-
-.equipo-colaborador {
-    border: 1px solid orange;
+.equipo-colaborador {      /*contenedor equipo colaborador*/
+    border: 2px solid var(--verde-claro);
+    border-radius: 5px;
+    /*background-color: var(--verde-claro);*/
+    padding:20px;
 }
 
-.voluntariado {
-    border: 1px solid blue;
+.voluntariado {          /*contenedor voluntariado */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid var(--marron);
+    border-radius: 5px;
+    background: var(--marron) url('images/fondo-tablero.jpg') no-repeat center;
+    background-size: cover;
+    padding: 40px;
 }
 
-.instalaciones-contenedor {}
+.voluntariado div:nth-child(2){
+    background-color: var(--beige);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px dotted var(--verde-sombras);
+}
 
-.instalaciones-img {}
+.voluntariado img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid var(--beige);
+    
+}
 
+.instalaciones-contenedor { /*instalaciones*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    
+}
 
+.instalaciones-img {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-.instalaciones-texto {}
+.instalaciones-img img {
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid var(--verde-sombras);
+}
 
+.instalaciones-texto {
+    background-color: var(--beige);
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--verde);
+}
 
+.lista-logo li {    /*estilos lista*/
+    padding: 8px;
+    margin: 5px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lista-logo li::before {    /*logo delante del li*/
+    content: " ";          /*contenedor vacio*/
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('images/logo-verde.png');
+    background-size: contain;
+    /*no recorta img*/
+    background-repeat: no-repeat;
+    rotate: 35deg;
+}
 
 
 /* =================================== SOBRE NOSOTRAS =========================================== */
-
 body.sobre {
     min-height: 100vh;
-
     display: flex;
     justify-content: center;
      background-color: var(--marron);
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    
-
-    
+   
 }
 
 .sobre > main {
@@ -363,9 +591,7 @@ body.sobre {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 1px 3px var(--rosa-sec);
-
 }
-
 
 .sobre p, .bloque li {
 
@@ -373,13 +599,12 @@ body.sobre {
     text-align: center;
     list-style: none;
 }
+
 .valores li{
     list-style: decimal;
     list-style-position: inside;
     text-align: justify;
 }
-
-
 
 .bloque {
     border-radius: 20px;
@@ -387,7 +612,7 @@ body.sobre {
     margin-bottom: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     border:2px;
-  }
+}
     
 .sobre-p {
     margin-top: 20px;
@@ -395,29 +620,6 @@ body.sobre {
 
 /* ======================== CONTACTO ====================================================== */
 /* (Andrea 31/03/2026) Estilos página contacto */
-
-body.contacto {
-    background-color: var(--marron);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.contacto main {
-    /*Modifico los selectores porque hay interferencias*/
-    max-width: 1200px;
-    margin: auto;
-    background-color: var(--beige);
-    padding: 40px;
-}
-
-.contacto h1 {
-    /*Modifico los selectores porque hay interferencias*/
-    color: var(--rosa);
-    text-align: center;
-    text-shadow: 1px 1px 3px var(--rosa-sec);
-    font-size: xx-large;
-    text-transform: uppercase;
-}
-
 .contacto form {
     /*Modifico los selectores porque hay interferencias*/
     background-color: var(--beige);
@@ -519,7 +721,6 @@ textarea {
 
 /* (Andrea 01/04/2026) Radios verdes */
 
-
 .radio-item input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;
@@ -560,8 +761,6 @@ textarea {
 }
 
 /* (Andrea 01/04/2026) Arreglando checkbox + hover otra vez */
-
-
 /* Contenedor */
 .checkbox-group {
     display: flex;
@@ -655,6 +854,10 @@ table {
     text-align: center;
 }
 
+tr:hover {
+    background-color: var(--rosa-sec);
+}
+
 th {
     background-color: var(--verde);
     color: white;
@@ -669,20 +872,6 @@ td {
 /* =================================== TIENDA =================================================== */
 /*(Estefanía 02/04/2026) Estilos del section*/
 /*class del body es tienda*/
-.tienda {
-    /*estilos generales del body*/
-    background-color: var(--marron);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.tienda main {
-    /*estilos del main*/
-    max-width: 1200px;
-    margin: auto;
-    background-color: var(--beige);
-    padding: 40px;
-}
-
 .tienda-contenido {
     /*section contenedor 2 bloques (fotos y texto)*/
     display: flex;
@@ -704,6 +893,7 @@ td {
     border: 2px solid var(--verde-sombras);
     border-radius: 5px;
     box-shadow: 5px 6px var(--verde-sombras);
+    overflow: hidden;
 }
 
 .tienda-imagenes img {
@@ -806,21 +996,8 @@ td {
 }
 
 /* =================================== NEWSLETTER================================================ */
+/*(Estefanía 03/04/2026) Estilos pag*/
 /*class del body es newsletter*/
-.newsletter {
-    /*estilos generales del body*/
-    background-color: var(--marron);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.newsletter main {
-    /*estilos del main*/
-    max-width: 1200px;
-    margin: auto;
-    background-color: var(--beige);
-    padding: 40px;
-}
-
 .suscripcion {
     /*estilos contenedor img y form*/
     display: flex;
@@ -855,12 +1032,9 @@ td {
     text-align: center;
 }
 
-.suscripcion form>h1 {
+.suscripcion form > h1 {
     /*titulo form*/
     font-size: x-large;
-    color: var(--rosa);
-    text-transform: uppercase;
-    text-shadow: 1px 1px 3px var(--rosa-sec);
     margin: 0;
 }
 
@@ -897,7 +1071,7 @@ td {
 }
 
 .boton,
-.suscripcion form>button {
+.suscripcion form > button {
     /*enlace y boton*/
     border: none;
     border-radius: 5px;
@@ -912,7 +1086,7 @@ td {
 }
 
 .boton:hover,
-.suscripcion form>button:hover {
+.suscripcion form > button:hover {
     background-color: var(--rosa-sec);
 }
 
@@ -931,21 +1105,8 @@ td {
 }
 
 /* =================================== SUSCRIPCION ================================================ */
+/*(Estefanía 03/04/2026) Estilos pag*/
 /*class del body es suscripcion*/
-.suscripcion-realizada {
-    /*estilos generales del body*/
-    background-color: var(--marron);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.suscripcion-realizada main {
-    /*estilos del main*/
-    max-width: 1200px;
-    margin: auto;
-    background-color: var(--beige);
-    padding: 40px;
-}
-
 .bienvenida {
     /*contenedor de img y texto*/
     display: flex;
@@ -1022,60 +1183,10 @@ td {
     margin: 0;
 }
 
-/* =================================== ESTILOS PARA OBJETOS COMUNES A TODAS LAS PÁGINAS ============================================*/
-/*==================================== GENERALES ================================================= */
-/*(Estefanía 30/03/2026) Ajuste estilos generales*/
-* {
-    box-sizing: border-box;
-    /* Resetear (dimension total real)*/
-    margin: 0px;
-    padding: 0px;
-}
-
-body {                      /*estilos comunes en todas las pag: body*/
-   background-color:var(--marron); 
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   color: var(--verde-sombras);
-}
-
-main {                     /*estilos comunes en todas las pag: main*/
-    max-width: 1200px;
-    margin: auto;
-    background-color: var(--beige);
-    padding: 40px;
-}
-
-/*(Andrea 30/03/2026)*/
-/* Colores globales */
-:root {
-    --rosa: #F294A5;
-    --rosa-sec: #D996A2;
-    --verde: #9DBF8E;
-    --verde-claro: #AFBFA3;
-    --verde-sombras: #26321d;
-    --verde-oscuro: #292D26;
-    --beige: #F2EADF;
-    --marron: #735449;
-}
-
-/*Fuente de títulos*/
-
-@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Inconsolata:wght@200..900&display=swap');
-
-h1 {
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-size: xx-large;
-    font-weight: bolder;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-}
 
 /* =================================== BARRA DE NAVEGACIÓN ========================================*/
 /* (Andrea 31/03/2026) Estilos navbar */
 /* (Estefania 1/04/2026) Modifico y añado estilos barra navegacion*/
-
 .nav {
     /*contenedor general barra navegacion*/
     max-height: none;
@@ -1190,7 +1301,6 @@ h1 {
 }
 
 /* =================================== FOOTER (PIE DE PÁGINA) =====================================*/
-
 /* (Andrea 31/03/2026) Footer */
 
 .footer {
